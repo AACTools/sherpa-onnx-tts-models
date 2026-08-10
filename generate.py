@@ -221,6 +221,16 @@ def _classify(parts: list[str], stem: str) -> tuple[str | None, str, str, str]:
     if model_type is None:
         return None, "", "", ""
 
+    if model_type == "matcha" and len(parts) > 1 and parts[1] == "tts":
+        # ``matcha-tts-fa_en-musa`` — the second segment is the literal "tts"
+        # from the project name "Matcha-TTS", not a developer slug. Collapse
+        # it so the developer/license resolve to the Matcha-TTS project.
+        developer = "matcha"
+        name = parts[3] if len(parts) > 3 else "unknown"
+        quality = parts[4] if len(parts) > 4 else "unknown"
+        quality = re.sub(r".*?_", "", quality)
+        return model_type, developer, name, quality
+
     if model_type == "kokoro":
         # Kokoro filenames pack a variant tag (int8 / multi-lang) and a
         # language together: ``kokoro-en-v0_19``, ``kokoro-int8-en-v0_19``,
@@ -396,11 +406,18 @@ def fetch_github_models() -> dict[str, dict]:
     models: dict[str, dict] = {}
     skipped = 0
     for asset in assets:
-        # Supertonic needs special handling (single multilingual model).
-        if "supertonic" in asset["name"] and "supertonic-3-tts-int8-2026-05-11" in asset["name"]:
+        fname = asset["name"]
+        # Supertonic v3 needs special handling (one multilingual model).
+        if "supertonic-3-tts-int8-2026-05-11" in fname:
             entry = build_supertonic_entry(asset)
             if entry:
                 models[entry["id"]] = entry
+            continue
+        # Older Supertonic bundles (v1/v2, e.g. ``...-2026-03-06.tar.bz2``)
+        # are superseded by the v3 multilingual release above and live on a
+        # separate upstream branch — skip them rather than emit garbled ids.
+        if "supertonic" in fname:
+            skipped += 1
             continue
         entry = parse_asset(asset)
         if entry is None:

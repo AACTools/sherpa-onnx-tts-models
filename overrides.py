@@ -75,6 +75,11 @@ DEVELOPER_LICENSES: dict[str, dict] = {
         "license": "Apache-2.0",
         "license_url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/LICENSE",
     },
+    "matcha": {
+        # Matcha-TTS is part of the icefall / sherpa-onnx ecosystem.
+        "license": "Apache-2.0",
+        "license_url": "https://github.com/k2-fsa/icefall/blob/master/LICENSE",
+    },
     "mms": {
         # Meta MMS weights are released under CC-BY-NC-4.0 (non-commercial).
         "license": "CC-BY-NC-4.0",

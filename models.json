@@ -2009,10 +2009,10 @@
     ],
     "deprecated": false
   },
-  "tts-fs-musa": {
-    "id": "tts-fs-musa",
+  "matcha-fs-musa": {
+    "id": "matcha-fs-musa",
     "model_type": "matcha",
-    "developer": "tts",
+    "developer": "matcha",
     "name": "musa",
     "language": [
       {
@@ -2027,9 +2027,9 @@
     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-tts-fa_en-musa.tar.bz2",
     "compression": true,
     "filesize_mb": 72.96,
-    "description": "Tts matcha TTS — Unknown language [fs]",
-    "license": "unknown",
-    "license_url": "",
+    "description": "Matcha TTS — Unknown language [fs]",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/k2-fsa/icefall/blob/master/LICENSE",
     "min_sherpa_onnx_version": "1.8.0",
     "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models",
     "tags": [
@@ -2039,10 +2039,10 @@
     ],
     "deprecated": false
   },
-  "tts-fs-khadijah": {
-    "id": "tts-fs-khadijah",
+  "matcha-fs-khadijah": {
+    "id": "matcha-fs-khadijah",
     "model_type": "matcha",
-    "developer": "tts",
+    "developer": "matcha",
     "name": "khadijah",
     "language": [
       {
@@ -2057,9 +2057,9 @@
     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-tts-fa_en-khadijah.tar.bz2",
     "compression": true,
     "filesize_mb": 72.97,
-    "description": "Tts matcha TTS — Unknown language [fs]",
-    "license": "unknown",
-    "license_url": "",
+    "description": "Matcha TTS — Unknown language [fs]",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/k2-fsa/icefall/blob/master/LICENSE",
     "min_sherpa_onnx_version": "1.8.0",
     "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models",
     "tags": [
@@ -6389,38 +6389,6 @@
       "matcha",
       "on-device",
       "sherpa-onnx"
-    ],
-    "deprecated": false
-  },
-  "supertone-fs-supertonic-3-int8-int8": {
-    "id": "supertone-fs-supertonic-3-int8-int8",
-    "model_type": "supertonic",
-    "developer": "supertone",
-    "name": "supertonic-3-int8",
-    "language": [
-      {
-        "lang_code": "fs",
-        "language_name": "Unknown language [fs]",
-        "country": "US"
-      }
-    ],
-    "quality": "int8",
-    "sample_rate": 24000,
-    "num_speakers": 1,
-    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-tts-int8-2026-03-06.tar.bz2",
-    "compression": true,
-    "filesize_mb": 80.77,
-    "sha256": "8c74359f63edd5045d47747f65331f0f6dbcbc91d7e898dd756d631295fe3259",
-    "description": "Supertone supertonic TTS — Unknown language [fs] (int8)",
-    "license": "OpenRAIL-M",
-    "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE",
-    "min_sherpa_onnx_version": "1.13.0",
-    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models",
-    "tags": [
-      "int8",
-      "on-device",
-      "sherpa-onnx",
-      "supertonic"
     ],
     "deprecated": false
   },
