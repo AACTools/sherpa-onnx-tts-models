@@ -1,0 +1,106 @@
+name: Release
+
+# Publish a versioned, checksummed models.json as a GitHub release asset so
+# downstream consumers (rust-tts-wrapper, js-tts-wrapper, tts-wrapper) can
+# pin a specific tag and fetch it reproducibly at sync time.
+#
+# Trigger: push a tag like `v2026-08-10` (or `v2026-08-10.1` for a re-roll).
+# The workflow regenerates models.json from the *current* generate.py +
+# overrides.py on that commit, validates it, and attaches:
+#   - models.json          (the registry)
+#   - models.json.sha256   (checksum for verified downloads)
+#   - schema.json          (the JSON Schema, so consumers can validate)
+#   - REGISTRY-VERSION.txt (the tag + entry count + sha, for provenance)
+#
+# Consumers then sync with:
+#   ./scripts/sync-registry.sh v2026-08-10
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to publish (e.g. v2026-08-10)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve tag
+        id: tag
+        run: |
+          if [ -n "${{ inputs.tag }}" ]; then
+            echo "tag=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Rebuild from scratch so the release reflects exactly what's in the
+      # repo at this tag — never a stale committed copy.
+      - name: Regenerate models.json
+        run: |
+          python generate.py --force --no-validate
+          python scripts/lint_json.py
+          python validate.py
+
+      - name: Write checksum and provenance
+        id: meta
+        run: |
+          sha256sum models.json | awk '{print $1}' > models.json.sha256
+          count=$(python -c "import json; print(len(json.load(open('models.json'))))")
+          sha=$(cat models.json.sha256)
+          cat > REGISTRY-VERSION.txt <<EOF
+          tag: ${{ steps.tag.outputs.tag }}
+          entries: ${count}
+          models.json.sha256: ${sha}
+          generated_at: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          source: https://github.com/AACTools/sherpa-onnx-tts-models
+          EOF
+          echo "count=${count}" >> "$GITHUB_OUTPUT"
+          echo "sha=${sha}" >> "$GITHUB_OUTPUT"
+
+      - name: Create release and upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: sherpa-onnx TTS registry ${{ steps.tag.outputs.tag }}
+          body: |
+            ## sherpa-onnx TTS model registry
+
+            `${{ steps.meta.outputs.count }}` enriched model entries.
+
+            | File | Purpose |
+            |------|---------|
+            | `models.json` | The registry (pin this in your consumer). |
+            | `models.json.sha256` | SHA-256 of `models.json` — verify after download. |
+            | `schema.json` | JSON Schema for the entry format. |
+            | `REGISTRY-VERSION.txt` | Tag, entry count, and checksum for provenance. |
+
+            ### Consuming from rust-tts-wrapper
+            ```bash
+            ./scripts/sync-registry.sh ${{ steps.tag.outputs.tag }}
+            ```
+          files: |
+            models.json
+            models.json.sha256
+            schema.json
+            REGISTRY-VERSION.txt
+          generate_release_notes: true

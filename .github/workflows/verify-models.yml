@@ -1,0 +1,82 @@
+name: Verify models
+
+# Actually synthesise audio for one model per model_type to catch broken
+# URLs, file-layout drift, and config-builder regressions. This is the
+# end-to-end check that schema/lint can't cover.
+#
+# Trigger: manual, or on PRs that change generation/overrides (the things
+# that could produce a registry that doesn't actually load). Not every push
+# — it downloads ~400 MB of models per matrix row.
+#
+# Each model_type runs as its own job so a single failure doesn't block the
+# others, and so they download in parallel.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "generate.py"
+      - "overrides.py"
+      - "scripts/verify_model.py"
+      - "scripts/pick_smallest_per_type.py"
+      - ".github/workflows/verify-models.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pick smallest model per type
+        id: set
+        run: |
+          python scripts/pick_smallest_per_type.py > /tmp/picks.json
+          echo "Picks:"
+          cat /tmp/picks.json
+          # Embed as a JSON matrix include list.
+          matrix=$(python -c "import json; print(json.dumps(json.load(open('/tmp/picks.json'))))")
+          echo "matrix=${matrix}" >> "$GITHUB_OUTPUT"
+
+  verify:
+    needs: pick
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.pick.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install sherpa-onnx
+        run: pip install sherpa-onnx requests
+
+      - name: Cache downloaded model
+        uses: actions/cache@v4
+        with:
+          path: .verify-cache
+          key: verify-${{ matrix.id }}-${{ matrix.sha256 }}
+
+      - name: Synthesise verification clip
+        run: |
+          python scripts/verify_model.py "${{ matrix.id }}" --cache-dir .verify-cache
+
+      - name: Upload clip artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clip-${{ matrix.model_type }}
+          path: .verify-cache/
+          if-no-files-found: ignore
+          retention-days: 7

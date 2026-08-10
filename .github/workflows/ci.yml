@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "generate.py"
+      - "overrides.py"
+      - "models.json"
+      - "schema.json"
+      - "validate.py"
+      - "scripts/lint_json.py"
+      - "requirements.txt"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    paths:
+      - "generate.py"
+      - "overrides.py"
+      - "models.json"
+      - "schema.json"
+      - "validate.py"
+      - "scripts/lint_json.py"
+      - "requirements.txt"
+      - ".github/workflows/ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # --- Formatting / determinism ----------------------------------------
+      # The committed models.json must be canonical (sorted ids, 2-space
+      # indent, trailing newline). Catches "regenerated but forgot to
+      # commit" and editors that reformat on save.
+      - name: Lint JSON (canonical formatting)
+        run: python scripts/lint_json.py
+
+      # --- Schema + content ------------------------------------------------
+      - name: Validate against schema
+        run: python validate.py
+
+  reproducibility:
+    # Regenerate models.json from scratch and assert it matches the
+    # committed copy byte-for-byte. Catches non-deterministic generation
+    # (unsorted output, timestamps, API-order dependence) before it makes
+    # the registry's diffs noisy.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Regenerate and diff against committed copy
+        run: |
+          cp models.json /tmp/committed.json
+          python generate.py --force --no-validate
+          # Restore canonical formatting (generate.py already sorts, but be
+          # explicit in case json output drifts).
+          python scripts/lint_json.py --rewrite
+          if ! diff -u /tmp/committed.json models.json; then
+            echo ""
+            echo "::error::Regenerated models.json differs from the committed copy."
+            echo "Run 'python generate.py --force --no-validate && python scripts/lint_json.py --rewrite' and commit the result."
+            exit 1
+          fi
+          echo "Regeneration is reproducible — committed models.json matches a fresh build."

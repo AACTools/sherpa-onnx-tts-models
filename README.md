@@ -69,42 +69,79 @@ Consumers should treat any field beyond `id` / `model_type` / `url` as optional
 and fall back gracefully — the schema is additive, and a field being absent
 means "not known", not "false".
 
-## Usage
+## Building & validating locally
 
-### Regenerate the registry
 ```bash
+make help                       # list all targets
 python -m venv .venv && .venv/bin/pip install -r requirements.txt
+
 .venv/bin/python generate.py            # incremental (preserves manual edits)
 .venv/bin/python generate.py --force    # full rebuild from scratch
+
+.venv/bin/python scripts/lint_json.py   # canonical-format check
+.venv/bin/python validate.py            # schema + uniqueness + plausibility
+.venv/bin/python validate.py --online   # + HEAD-check a sample of URLs
 ```
 
-### Validate
+CI (`.github/workflows/ci.yml`) runs lint + validate + a reproducibility
+check on every PR. Model verification
+(`.github/workflows/verify-models.yml`) actually synthesises audio for the
+smallest model of each type.
+
+## Releases
+
+Tags cut a **versioned, checksummed** release that consumers can pin. Push a
+tag (`vYYYY-MM-DD`, optionally `.1`/`.2` for same-day re-rolls) and the
+[`release.yml`](./.github/workflows/release.yml) workflow rebuilds
+`models.json` from the committed `generate.py`/`overrides.py` at that tag,
+then uploads:
+
+| Asset | Purpose |
+|-------|---------|
+| `models.json` | The registry — pin a tag and fetch this. |
+| `models.json.sha256` | SHA-256 of `models.json` for verified downloads. |
+| `schema.json` | The JSON Schema, so consumers can validate post-sync. |
+| `REGISTRY-VERSION.txt` | Tag, entry count, and checksum for provenance. |
+
 ```bash
-.venv/bin/python validate.py            # offline: schema + uniqueness + plausibility
-.venv/bin/python validate.py --online   # also HEAD-check a sample of URLs
+git tag v2026-08-10
+git push origin v2026-08-10
 ```
 
-### Consume (Python)
+Consumers should **never** track `main` — always pin a tag so a build is
+reproducible.
+
+## Consuming
+
+### rust-tts-wrapper (the canonical ingestion pattern)
+
+rust-tts-wrapper vendors a copy of the registry via
+`include_str!("merged_models.json")` and ships a sync script that pulls a
+specific tagged release, verifies its checksum, and drops it into `src/`:
+
+```bash
+# from the rust-tts-wrapper checkout
+./scripts/sync-registry.sh v2026-08-10
+```
+
+That script writes `src/merged_models.json` **and** `src/registry-version.txt`
+(provenance: tag + sha256). Commit both — the build then needs no network.
+See [rust-tts-wrapper's sync-registry.sh](https://github.com/AACTools/rust-tts-wrapper/blob/main/scripts/sync-registry.sh).
+
+The same pattern ports directly to `js-tts-wrapper` and (python) `tts-wrapper`:
+fetch the tagged `models.json`, verify the sha256, replace the vendored copy,
+bump a version constant.
+
+### Generic (any language)
 ```python
-import json, urllib.request
-reg = json.load(open("models.json"))
-supertonic = reg["supertonic-3-multilingual"]
-print(supertonic["license"])            # OpenRAIL-M
-print(supertonic["voice_names"])        # {"0": "M1", "1": "M2", ...}
+import json, urllib.request, hashlib
+TAG = "v2026-08-10"
+base = f"https://github.com/AACTools/sherpa-onnx-tts-models/releases/download/{TAG}"
+data = urllib.request.urlopen(f"{base}/models.json").read()
+expected = urllib.request.urlopen(f"{base}/models.json.sha256").read().strip().decode()
+assert hashlib.sha256(data).hexdigest() == expected, "checksum mismatch"
+registry = json.loads(data)
 ```
-
-### Consume (Rust — rust-tts-wrapper)
-rust-tts-wrapper already embeds a copy of this registry via
-`include_str!("merged_models.json")`. To sync it with this canonical source,
-copy `models.json` over `src/merged_models.json`:
-
-```bash
-cp models.json path/to/rust-tts-wrapper/src/merged_models.json
-```
-
-The enriched fields (`license`, `sha256`, `voice_names`, …) are ignored by the
-current `parse_model` until you opt into them, so the copy is safe. (See the
-rust-tts-wrapper README for the `SherpaModelInfo` struct.)
 
 ## Curating metadata
 
