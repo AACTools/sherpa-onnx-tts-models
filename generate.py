@@ -529,6 +529,12 @@ def main() -> int:
     if not args.no_validate:
         validate_urls(models, args.limit_validate)
 
+    # Sort by id so output is deterministic across runs (the GitHub API and
+    # Hugging Face can return assets in different orders). This keeps diffs
+    # minimal and lets CI assert that the committed models.json matches a
+    # fresh regeneration byte-for-byte.
+    models = dict(sorted(models.items()))
+
     OUTPUT.write_text(json.dumps(models, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     logger.info("Wrote %d models to %s", len(models), OUTPUT)
     return 0
