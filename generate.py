@@ -53,14 +53,21 @@ RELEASE_TAG = "tts-models"
 HERE = Path(__file__).resolve().parent
 OUTPUT = HERE / "models.json"
 
-# Matches a 2-letter language code embedded after a dash in a URL segment,
-# used as a last-resort language guess for VITS-family models.
-LANG_CODE_FALLBACK = re.compile(r"-(?P<lang>[a-z]{2})([_-][A-Z]{2})?")
+# A whole filename segment that is exactly a 2-letter language code,
+# optionally with a region ("en", "en_US", "zh_en"), used as a last-resort
+# language guess for VITS-family models. Matching whole segments (never
+# substrings — "-in" inside "inflect" is not Indonesian) and only the
+# *filename* (the "fs" of "k2-fsa" in the URL once produced a bogus ``fs``).
+LANG_SEGMENT_FALLBACK = re.compile(r"^[a-z]{2}(_[a-zA-Z]{2})?$")
 ISO_PATTERN = re.compile(r"^[a-zA-Z0-9]{1,8}$")
 
 # The set of model types sherpa-onnx's ``OfflineTtsModelConfig`` understands.
 # Anything else in the release is skipped (ASR models, vocoders, espeak data…).
-KNOWN_MODEL_TYPES = {"vits", "matcha", "kokoro", "kitten", "supertonic"}
+KNOWN_MODEL_TYPES = {"vits", "matcha", "kokoro", "kitten", "supertonic", "zipvoice", "pocket"}
+
+# Trailing precision/quantization tags used by piper/coqui/kitten/zipvoice
+# releases. The untagged archive of a voice is the full-precision (fp32) one.
+QUANT_TAGS = {"int8", "fp16", "fp32"}
 
 
 # ---------------------------------------------------------------------------
@@ -134,10 +141,15 @@ def extract_languages(url: str, model_type: str, developer: str) -> list[tuple[s
                 region = seg.split("_")[1] if "_" in seg else "Unknown"
                 return [(seg.split("_")[0], region)]
 
-    # Generic fallback.
-    m = LANG_CODE_FALLBACK.search(url)
-    if m:
-        return [(m.group("lang"), "Unknown")]
+    # Generic fallback — whole filename segments only, never the URL.
+    # Strip the archive extension first so a trailing "en.tar.bz2" is "en".
+    stem = re.sub(r"\.(tar\.bz2|tar\.gz|zip)$", "", filename)
+    for seg in stem.split("-"):
+        m = LANG_SEGMENT_FALLBACK.match(seg)
+        if m:
+            code = seg[:2]
+            region = seg[3:].upper() if len(seg) > 2 else ""
+            return [(code, region or "Unknown")]
     return [("unknown", "Unknown")]
 
 
@@ -149,31 +161,62 @@ def parse_asset(asset: dict) -> dict | None:
     """Turn a GitHub release asset into a registry entry, or ``None`` to skip.
 
     Returns ``None`` for anything that isn't a TTS model archive (.exe,
-    checksum files, espeak data, ASR models, vocoders distributed separately).
+    checksum files, espeak data, ASR models, vocoders distributed separately,
+    superseded re-uploads).
     """
     filename = asset["name"]
     # Skip obvious non-model artefacts in the release.
     if (
-        filename.endswith((".exe", ".txt", ".png"))
+        filename.endswith((".exe", ".txt", ".png", ".wav"))
         or filename.startswith("espeak-")
         or "-mms-" in filename
     ):
+        return None
+
+    # kokoro multi-lang v1_0 (53 speakers) was superseded by v1_1 (103
+    # speakers) on the same day; only register the v1_1 uploads.
+    if re.fullmatch(r"kokoro-(int8-)?multi-lang-v1_0\.(tar\.bz2|tar\.gz|zip)", filename):
         return None
 
     url = asset["browser_download_url"]
     stem = re.sub(r"\.(tar\.bz2|tar\.gz|zip)$", "", filename)
     parts = stem.split("-")
 
+    # Newer "sherpa-onnx-<type>-…" packaged models (supertonic handled by the
+    # caller; zipvoice/pocket/vits-zh-ll here).
+    if stem.startswith("sherpa-onnx-"):
+        sub = parts[2] if len(parts) > 2 else ""
+        if sub == "zipvoice":
+            return build_zipvoice_entry(asset)
+        if sub == "pocket":
+            return build_pocket_entry(asset)
+        if sub == "vits" and stem == "sherpa-onnx-vits-zh-ll":
+            return build_zh_ll_entry(asset)
+        if sub not in ("supertonic", "kitten"):
+            return None
+
+    # Trailing quantization tag: ``vits-piper-en_US-amy-low-int8`` → the int8
+    # build of the ``amy`` voice. Strip it so name/quality parsing is stable,
+    # then re-attach it to the id and the ``quantization`` field — otherwise
+    # all three variants of a voice collapse onto the same id and only the
+    # last one (in GitHub API order) survives.
+    quant = "fp32"
+    if len(parts) >= 5 and parts[-1] in QUANT_TAGS:
+        quant = parts[-1]
+        parts = parts[:-1]
+
     model_type, developer, name, quality = _classify(parts, stem)
     if model_type is None:
         return None
+    name = overrides.fix_name(filename, name)
 
     lang_pairs = extract_languages(url, model_type, developer)
+    lang_pairs = overrides.fix_language(filename, lang_pairs)
     langs = [language_data(code, region) for code, region in lang_pairs]
 
     sample_rate = _sample_rate(developer, model_type)
 
-    model_id = _model_id(developer, [c for c, _ in lang_pairs], name, quality)
+    model_id = _model_id(developer, lang_pairs, name, quality, quant)
 
     entry: dict[str, Any] = {
         "id": model_id,
@@ -182,12 +225,17 @@ def parse_asset(asset: dict) -> dict | None:
         "name": name,
         "language": langs,
         "quality": quality,
+        "quantization": quant,
         "sample_rate": sample_rate,
         "num_speakers": 1,
         "url": url,
         "compression": True,
         "filesize_mb": round(asset["size"] / (1024 * 1024), 2),
     }
+
+    # Curated per-filename facts (speaker counts, sample rates, voice names)
+    # that can't be derived from the filename at all.
+    overrides.apply_filename_meta(filename, entry)
 
     # SHA-256 straight from the GitHub API ``digest`` field (``sha256:…``).
     digest = asset.get("digest") or ""
@@ -262,7 +310,7 @@ def _kokoro_variant(segments: list[str], filename: str) -> str:
     ``kokoro-int8-multi-lang-v1_1`` → [int8, multi, lang, v1_1] → "int8"
     ``kokoro-multi-lang-v1_1``    → [multi, lang, v1_1]        → "multi-lang"
 
-    Drops the redundant ``multi-lang``/``lang``/``v\d+_\d+`` tail because
+    Drops the redundant ``multi-lang``/``lang``/version tail because
     multilingual-ness is already encoded in the language list and the version
     is noise for the id.
     """
@@ -285,13 +333,39 @@ def _sample_rate(developer: str, model_type: str) -> int:
         return 24000
     if model_type == "supertonic":
         return 24000
+    if model_type == "zipvoice":
+        return 24000
+    if model_type == "pocket":
+        return 24000
     return 16000
 
 
-def _model_id(developer: str, lang_codes: list[str], name: str, quality: str) -> str:
+def _model_id(
+    developer: str,
+    lang_pairs: list[tuple[str, str]],
+    name: str,
+    quality: str,
+    quant: str = "fp32",
+) -> str:
+    """Build the registry id.
+
+    Piper and Mimic3 voices are regional (``en_US`` vs ``en_GB``) and
+    different regions can ship the same voice name (e.g. both ``en_GB-miro``
+    and ``en_US-miro`` exist), so their id keeps the region. The
+    quantization is appended when it isn't the default fp32 so the three
+    builds of a voice stay distinct.
+    """
+    if developer in ("piper", "mimic3"):
+        tokens = [f"{code}_{region}" if region and region != "Unknown" else code
+                  for code, region in lang_pairs]
+    else:
+        tokens = [code for code, _ in lang_pairs]
+    base = f"{developer}-{'_'.join(tokens)}-{name}"
     if quality and quality != "unknown":
-        return f"{developer}-{'_'.join(lang_codes)}-{name}-{quality}"
-    return f"{developer}-{'_'.join(lang_codes)}-{name}"
+        base = f"{base}-{quality}"
+    if quant in ("int8", "fp16"):
+        base = f"{base}-{quant}"
+    return base
 
 
 def _pretty_developer(name: str) -> str:
@@ -319,7 +393,16 @@ def _enrich(entry: dict) -> None:
     if len(langs) > 1:
         lang_part = f"{len(langs)} languages"
     speaker_part = f", {entry['num_speakers']} voices" if entry["num_speakers"] > 1 else ""
-    quality_part = f" ({entry['quality']})" if entry["quality"] != "unknown" else ""
+    quality = entry.get("quality", "unknown")
+    quant = entry.get("quantization", "fp32")
+    if quality != "unknown" and quant in ("int8", "fp16"):
+        quality_part = f" ({quality}, {quant})"
+    elif quality != "unknown":
+        quality_part = f" ({quality})"
+    elif quant in ("int8", "fp16"):
+        quality_part = f" ({quant})"
+    else:
+        quality_part = ""
     if developer == model_type:
         source = _pretty_developer(developer)
     else:
@@ -344,7 +427,7 @@ def _enrich(entry: dict) -> None:
         tags.add("multi-speaker")
     if len(langs) > 1:
         tags.add("multilingual")
-    if "int8" in entry.get("quality", "") or "int8" in entry["name"]:
+    if entry.get("quantization") == "int8":
         tags.add("int8")
     entry["tags"] = sorted(tags)
 
@@ -386,7 +469,106 @@ def build_supertonic_entry(asset: dict) -> dict:
     )
     # Re-apply overrides now that the id is final, then re-derive tags.
     overrides.apply_overrides(entry["id"], entry)
-    entry["tags"] = sorted({"supertonic", "on-device", "sherpa-onnx", "multilingual", "int8"})
+    entry["tags"] = sorted(
+        {"supertonic", "on-device", "sherpa-onnx", "multilingual", "multi-speaker", "int8"}
+    )
+    return entry
+
+
+# ---------------------------------------------------------------------------
+# ZipVoice: zero-shot voice cloning (zh + en), packaged as
+# ``sherpa-onnx-zipvoice[-distill][-int8|-fp32]-zh-en-emilia``
+# ---------------------------------------------------------------------------
+
+def build_zipvoice_entry(asset: dict) -> dict:
+    distill = "-distill" in asset["name"]
+    quant = "int8" if "-int8-" in asset["name"] else "fp32"
+
+    # The Dec-2025 ``distill-fp32`` re-upload is a different build from the
+    # Aug-2025 ``distill`` archive (both fp32), so keep the explicit tag in
+    # the name to disambiguate the ids.
+    name = "emilia-distill" if distill else "emilia"
+    if distill and "-fp32-" in asset["name"]:
+        name = "emilia-distill-fp32"
+
+    entry = _build_packaged_entry(asset, "zipvoice", "zipvoice", name, quant,
+                                  [("zh", "CN"), ("en", "US")])
+    entry["description"] = (
+        "ZipVoice zero-shot voice-cloning TTS (flow matching) — Chinese + "
+        "English; needs reference audio and its transcript"
+    )
+    entry["tags"] = sorted({
+        "zipvoice", "on-device", "sherpa-onnx", "multilingual",
+        "zero-shot", "voice-cloning", *(["int8"] if quant == "int8" else []),
+    })
+    return entry
+
+
+# ---------------------------------------------------------------------------
+# PocketTTS (Kyutai): zero-shot voice cloning, English, reference audio only.
+# Packaged as ``sherpa-onnx-pocket-tts[-int8]-2026-01-26``.
+# ---------------------------------------------------------------------------
+
+def build_pocket_entry(asset: dict) -> dict:
+    quant = "int8" if "-int8-" in asset["name"] else "fp32"
+    entry = _build_packaged_entry(asset, "pocket", "kyutai", "pocket-tts", quant,
+                                  [("en", "US")])
+    entry["description"] = (
+        "Kyutai PocketTTS zero-shot voice-cloning TTS — English; needs a "
+        "short reference audio clip (no transcript)"
+    )
+    entry["tags"] = sorted({
+        "pocket", "on-device", "sherpa-onnx",
+        "zero-shot", "voice-cloning", *(["int8"] if quant == "int8" else []),
+    })
+    return entry
+
+
+# ---------------------------------------------------------------------------
+# sherpa-onnx-vits-zh-ll: Chinese multi-speaker VITS (5 speakers), trained
+# with Plachtaa/VITS-fast-fine-tuning, hosted by csukuangfj.
+# ---------------------------------------------------------------------------
+
+def build_zh_ll_entry(asset: dict) -> dict:
+    entry = _build_packaged_entry(asset, "vits", "csukuangfj", "ll", "fp32",
+                                  [("zh", "CN")])
+    entry["num_speakers"] = 5
+    entry["description"] = (
+        "Multi-speaker Chinese VITS (VITS-fast-fine-tuning) — 5 voices"
+    )
+    entry["tags"] = sorted({"vits", "on-device", "sherpa-onnx", "multi-speaker"})
+    return entry
+
+
+def _build_packaged_entry(
+    asset: dict,
+    model_type: str,
+    developer: str,
+    name: str,
+    quant: str,
+    lang_pairs: list[tuple[str, str]],
+) -> dict:
+    """Shared skeleton for the ``sherpa-onnx-<type>-…`` packaged models."""
+    url = asset["browser_download_url"]
+    model_id = _model_id(developer, lang_pairs, name, "unknown", quant)
+    entry: dict[str, Any] = {
+        "id": model_id,
+        "model_type": model_type,
+        "developer": developer,
+        "name": name,
+        "language": [language_data(code, region) for code, region in lang_pairs],
+        "quality": "unknown",
+        "quantization": quant,
+        "sample_rate": _sample_rate(developer, model_type),
+        "num_speakers": 1,
+        "url": url,
+        "compression": True,
+        "filesize_mb": round(asset["size"] / (1024 * 1024), 2),
+    }
+    digest = asset.get("digest") or ""
+    if digest.startswith("sha256:"):
+        entry["sha256"] = digest.split(":", 1)[1]
+    _enrich(entry)
     return entry
 
 
@@ -458,6 +640,7 @@ def fetch_mms_models() -> dict[str, dict]:
             "name": row.get("Language Name", iso),
             "language": langs,
             "quality": "unknown",
+            "quantization": "fp32",
             "sample_rate": 16000,
             "num_speakers": 1,
             "url": raw_url,

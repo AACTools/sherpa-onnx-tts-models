@@ -9,17 +9,17 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Stable unique identifier. Convention: '<developer>-<lang(s)>-<name>[-<quality>]'. Used as the key in models.json and as modelId in consumers.",
-      "examples": ["supertonic-3-multilingual", "kokoro-en-en-19", "piper-en_GB-amy-low"]
+      "description": "Stable unique identifier. Convention: '<developer>-<lang(s)>-<name>[-<quality>][-<quantization>]'. Piper/Mimic3 ids keep the region (en_US) since voice names repeat across regions; non-default quantizations get an -int8/-fp16 suffix. Used as the key in models.json and as modelId in consumers.",
+      "examples": ["supertonic-3-multilingual", "kokoro-en-v0_19", "piper-en_US-amy-low", "piper-en_US-amy-low-int8"]
     },
     "model_type": {
       "type": "string",
       "description": "sherpa-onnx OfflineTtsModelConfig branch. Determines which config builder a consumer uses.",
-      "enum": ["vits", "matcha", "kokoro", "kitten", "supertonic", "mms"]
+      "enum": ["vits", "matcha", "kokoro", "kitten", "supertonic", "zipvoice", "pocket", "mms"]
     },
     "developer": {
       "type": "string",
-      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, vits).",
+      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, …).",
       "examples": ["piper", "supertone"]
     },
     "name": {
@@ -44,9 +44,15 @@
         }
       }
     },
-    "quality": { "type": "string", "description": "Variant/size tag from the filename (low/medium/high/int8/v0_19/unknown)." },
+    "quality": { "type": "string", "description": "Variant/size tag from the filename (low/medium/high/x_low/v0_19/unknown)." },
+    "quantization": {
+      "type": "string",
+      "enum": ["fp32", "fp16", "int8"],
+      "default": "fp32",
+      "description": "Numeric precision of the ONNX build. fp32 is the full-precision default; int8/fp16 are the smaller quantized builds shipped alongside it."
+    },
     "sample_rate": { "type": "integer", "description": "Output audio sample rate in Hz.", "examples": [16000, 22050, 24000] },
-    "num_speakers": { "type": "integer", "minimum": 1, "description": "Number of preset voices addressable by speaker id." },
+    "num_speakers": { "type": "integer", "minimum": 1, "description": "Number of preset voices addressable by speaker id. Zero-shot voice-cloning models (zipvoice, pocket) are 1 — they clone any voice from reference audio rather than exposing presets." },
     "voice_names": {
       "type": "object",
       "description": "Optional mapping of speaker id (as string) to a human-readable voice name. Only present for models with named presets (e.g. Supertonic M1–M5, F1–F5).",
@@ -63,7 +69,7 @@
     "min_sherpa_onnx_version": { "type": "string", "description": "First sherpa-onnx release supporting this model_type (semver-ish string). Consumers can skip models their pinned runtime can't load." },
     "deprecated": { "type": "boolean", "default": false, "description": "True when the upstream project is archived or the model is no longer recommended." },
     "deprecation_note": { "type": "string", "description": "Why the model is deprecated, and any migration path." },
-    "tags": { "type": "array", "items": { "type": "string" }, "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, …" },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, zero-shot, voice-cloning, …" },
     "url_valid": { "type": "boolean", "description": "Set by --validate. Absent until the URL has been HEAD-checked." }
   }
 }

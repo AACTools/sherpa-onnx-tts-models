@@ -20,6 +20,8 @@ edit this file rather than scattering special cases through ``generate.py``.
 
 from __future__ import annotations
 
+import re
+
 # ---------------------------------------------------------------------------
 # License mapping
 # ---------------------------------------------------------------------------
@@ -39,6 +41,12 @@ from __future__ import annotations
 #   mimic3    — https://github.com/MycroftAI/mimic3 (AGPL-3.0)
 #   melo      — https://github.com/myshell-ai/MeloTTS (MIT)
 #   kitten    — sherpa-onnx project model (Apache-2.0)
+#   kyutai    — https://huggingface.co/kyutai/pocket-tts (CC-BY-4.0)
+#   zipvoice  — code https://github.com/k2-fsa/zipvoice is Apache-2.0, but the
+#               released weights (HF k2-fsa/ZipVoice) carry no license and are
+#               trained on the CC-BY-NC-4.0 Emilia dataset — "unknown".
+#   csukuangfj — https://huggingface.co/csukuangfj/sherpa-onnx-vits-zh-ll (no
+#               license stated; trained with Plachtaa/VITS-fast-fine-tuning)
 
 DEVELOPER_LICENSES: dict[str, dict] = {
     "piper": {
@@ -91,6 +99,21 @@ DEVELOPER_LICENSES: dict[str, dict] = {
         "license": "Apache-2.0",
         "license_url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/LICENSE",
     },
+    "kyutai": {
+        "license": "CC-BY-4.0",
+        "license_url": "https://huggingface.co/kyutai/pocket-tts",
+    },
+    "zipvoice": {
+        # Code is Apache-2.0 (github.com/k2-fsa/zipvoice) but the released
+        # weights have no license statement and were trained on the
+        # CC-BY-NC-4.0 Emilia dataset. Verify before commercial use.
+        "license": "unknown",
+        "license_url": "https://huggingface.co/k2-fsa/ZipVoice",
+    },
+    "csukuangfj": {
+        "license": "unknown",
+        "license_url": "https://huggingface.co/csukuangfj/sherpa-onnx-vits-zh-ll",
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -105,8 +128,91 @@ MIN_SHERPA_ONNX_VERSION: dict[str, str] = {
     "mms": "1.0.0",
     "matcha": "1.8.0",
     "kokoro": "1.10.0",
-    "kitten": "1.11.0",
+    "kitten": "1.12.8",  # config added 2025-08-07 (PR #2460), released v1.12.8
     "supertonic": "1.13.0",  # PR #3605 — https://github.com/k2-fsa/sherpa-onnx/pull/3605
+    "zipvoice": "1.12.11",  # config added 2025-08-27 (PR #2487), released v1.12.11
+    "pocket": "1.12.24",  # PR #3083 — https://github.com/k2-fsa/sherpa-onnx/pull/3083
+}
+
+# ---------------------------------------------------------------------------
+# Per-filename curated facts
+# ---------------------------------------------------------------------------
+# Speaker counts and sample rates that cannot be derived from the filename.
+# Sources (checked 2026-08-17):
+#   * sherpa-onnx docs — https://k2-fsa.github.io/sherpa/onnx/tts/pretrained_models/
+#     (vits.html model table: zh-ll=5, fanchen-C=187, theresa/eula=804,
+#      aishell3=174, vits-vctk=109; kokoro.html: en-v0_19=11 speakers,
+#      multi-lang-v1_1=103 speakers)
+#   * piper-voices model configs (HF rhasspy/piper-voices) — vctk=109,
+#     l2arctic=24, libritts/libritts_r=904, all 22050 Hz
+#   * VCTK corpus = 109 speakers (applies to the coqui VCTK model too)
+#
+# A key matches a file and all its quantization variants
+# (``key.tar.bz2``, ``key-int8.tar.bz2``, ``key-fp16.tar.bz2``).
+
+FILENAME_LANGUAGE: dict[str, list[tuple[str, str]]] = {
+    # Filenames with no embedded language code at all.
+    "vits-ljs.tar.bz2": [("en", "US")],  # LJSpeech
+    "vits-vctk.tar.bz2": [("en", "GB")],  # VCTK (British corpus)
+    "vits-cantonese-hf-xiaomaiiwn.tar.bz2": [("yue", "")],
+    # Bilingual models where the filename only shows one code
+    # (musa is fa+en per HF mah92/Musa-FA_EN-Matcha-TTS-Model).
+    "vits-melo-tts-zh_en.tar.bz2": [("zh", "CN"), ("en", "US")],
+    "matcha-icefall-zh-en.tar.bz2": [("zh", "CN"), ("en", "US")],
+    # Both FA_EN voices are Persian + English (HF mah92/*-FA_EN-Matcha-*).
+    "matcha-tts-fa_en-musa.tar.bz2": [("fa", "IR"), ("en", "US")],
+    "matcha-tts-fa_en-khadijah.tar.bz2": [("fa", "IR"), ("en", "US")],
+}
+
+# Files whose parsed "name" segment is meaningless (a language code or
+# "unknown") — replaced with the real model name so the id reads sensibly.
+FILENAME_NAME: dict[str, str] = {
+    "vits-ljs.tar.bz2": "ljspeech",
+    "vits-vctk.tar.bz2": "vctk",
+    "vits-zh-aishell3.tar.bz2": "aishell3",
+    "vits-melo-tts-en.tar.bz2": "melo-tts",
+    "vits-melo-tts-zh_en.tar.bz2": "melo-tts",
+    # parts[3] would be the language code "en", not a name.
+    "matcha-icefall-zh-en.tar.bz2": "zh-en",
+}
+
+FILENAME_LANGUAGE_PREFIXES: dict[str, list[tuple[str, str]]] = {
+    "vits-zh-hf-": [("zh", "CN")],  # Chinese HF-hosted voices
+}
+
+FILENAME_META: dict[str, dict] = {
+    # Keys are archive stems (filename without .tar.bz2 / .zip).
+    "vits-ljs": {"sample_rate": 22050},
+    "vits-vctk": {"num_speakers": 109, "sample_rate": 22050},
+    "vits-coqui-en-vctk": {"num_speakers": 109, "sample_rate": 22050},
+    "vits-zh-aishell3": {"num_speakers": 174, "sample_rate": 8000},
+    "vits-icefall-zh-aishell3": {"num_speakers": 174, "sample_rate": 8000},
+    "vits-zh-hf-fanchen-C": {"num_speakers": 187},
+    "vits-zh-hf-theresa": {"num_speakers": 804, "sample_rate": 22050},
+    "vits-zh-hf-eula": {"num_speakers": 804, "sample_rate": 22050},
+    "vits-piper-en_GB-vctk-medium": {"num_speakers": 109},
+    "vits-piper-en_US-l2arctic-medium": {"num_speakers": 24},
+    "vits-piper-en_US-libritts-high": {"num_speakers": 904},
+    "vits-piper-en_US-libritts_r-medium": {"num_speakers": 904},
+    "kokoro-en-v0_19": {"num_speakers": 11},
+    "kokoro-int8-en-v0_19": {"num_speakers": 11},
+    "kokoro-multi-lang-v1_1": {"num_speakers": 103},
+    "kokoro-int8-multi-lang-v1_1": {"num_speakers": 103},
+}
+
+# Kokoro en v0_19 preset voices (docs: IDs 0–10).
+KOKORO_EN_V0_19_VOICES: dict[str, str] = {
+    "0": "af",
+    "1": "af_bella",
+    "2": "af_nicole",
+    "3": "af_sarah",
+    "4": "af_sky",
+    "5": "am_adam",
+    "6": "am_michael",
+    "7": "bf_emma",
+    "8": "bf_isabella",
+    "9": "bm_george",
+    "10": "bm_lewis",
 }
 
 # ---------------------------------------------------------------------------
@@ -147,8 +253,31 @@ MODEL_OVERRIDES: dict[str, dict] = {
     "kokoro-zh_en-multi-lang": {
         "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
     },
-    "kokoro-en-en-19": {
+    "kokoro-en-v0_19": {
         "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+        "voice_names": KOKORO_EN_V0_19_VOICES,
+    },
+    # New packaged zero-shot models.
+    "kyutai-en-pocket-tts": {
+        "source_url": "https://huggingface.co/kyutai/pocket-tts",
+    },
+    "kyutai-en-pocket-tts-int8": {
+        "source_url": "https://huggingface.co/kyutai/pocket-tts",
+    },
+    "zipvoice-zh_en-emilia": {
+        "source_url": "https://huggingface.co/k2-fsa/ZipVoice",
+    },
+    "zipvoice-zh_en-emilia-distill": {
+        "source_url": "https://huggingface.co/k2-fsa/ZipVoice",
+    },
+    "zipvoice-zh_en-emilia-distill-fp32": {
+        "source_url": "https://huggingface.co/k2-fsa/ZipVoice",
+    },
+    "zipvoice-zh_en-emilia-distill-int8": {
+        "source_url": "https://huggingface.co/k2-fsa/ZipVoice",
+    },
+    "csukuangfj-zh-ll": {
+        "source_url": "https://huggingface.co/csukuangfj/sherpa-onnx-vits-zh-ll",
     },
 }
 
@@ -169,6 +298,41 @@ def resolve_license(developer: str, model_type: str) -> dict[str, str]:
 def resolve_min_version(model_type: str) -> str:
     """First sherpa-onnx version supporting ``model_type`` (or ``"0.0.0"``)."""
     return MIN_SHERPA_ONNX_VERSION.get(model_type, "0.0.0")
+
+
+def fix_language(filename: str, lang_pairs: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """Replace derived language pairs when the filename is a known exception.
+
+    Used for files with no language code in the name at all (``vits-ljs``)
+    and bilingual models whose filename only encodes one code.
+    """
+    if filename in FILENAME_LANGUAGE:
+        return FILENAME_LANGUAGE[filename]
+    for prefix, pairs in FILENAME_LANGUAGE_PREFIXES.items():
+        if filename.startswith(prefix):
+            return pairs
+    return lang_pairs
+
+
+def fix_name(filename: str, name: str) -> str:
+    """Replace a meaningless parsed name (a language code, "unknown") for
+    files whose layout doesn't fit the ``developer-lang-name-quality``
+    convention."""
+    return FILENAME_NAME.get(filename, name)
+
+
+def apply_filename_meta(filename: str, entry: dict) -> None:
+    """Merge curated per-filename facts (speakers, sample rate) onto ``entry``.
+
+    Keys are archive stems and match both the plain build and its
+    quantization variants (``-int8`` / ``-fp16``), so one fact covers all
+    builds of a voice.
+    """
+    stem = re.sub(r"\.(tar\.bz2|tar\.gz|zip)$", "", filename)
+    key = stem if stem in FILENAME_META else re.sub(r"-(int8|fp16|fp32)$", "", stem)
+    if key in FILENAME_META:
+        for field, value in FILENAME_META[key].items():
+            entry[field] = value
 
 
 def apply_overrides(model_id: str, entry: dict) -> dict:
