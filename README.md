@@ -24,12 +24,22 @@ and takes a few seconds — **no model files are downloaded**.
 
 ## Why a separate registry?
 
-The sherpa-onnx project ships ~1,400 TTS models across a GitHub release and a
+The sherpa-onnx project ships ~1,750 TTS models across a GitHub release and a
 Hugging Face repo. Each model is just a tarball; the *metadata* that makes it
 usable — which language, how many voices, what license, how big, which
 sherpa-onnx version supports it, whether it's deprecated — is scattered across
 filenames, READMEs, and model cards. This registry gathers it in one
 machine-readable place so every TTS wrapper doesn't reinvent the same parsing.
+
+## Coverage
+
+Every TTS archive on the `tts-models` release is registered (622 of the 642
+assets; the other 20 are deliberate skips: checksums, sample wavs, espeak
+data, the Windows binary, the 8 `vits-mms-*` bundles duplicated by the HF MMS
+set, the superseded kokoro multi-lang v1.0 and Supertonic v2 re-uploads).
+Speaker counts, sample rates, and licenses are verified against the
+sherpa-onnx docs, the piper-voices configs, and the upstream model cards —
+anything unverifiable is left `unknown` rather than guessed.
 
 ## Schema
 
@@ -38,14 +48,15 @@ Every entry in `models.json` conforms to `schema.json`. The fields:
 ### Core (always present)
 | Field | Type | Notes |
 |-------|------|-------|
-| `id` | string | Stable unique id, convention `<developer>-<lang>-<name>[-<quality>]`. Used as the registry key. |
-| `model_type` | enum | `vits` \| `matcha` \| `kokoro` \| `kitten` \| `supertonic` \| `mms` — the sherpa-onnx `OfflineTtsModelConfig` branch. |
-| `developer` | string | Upstream project (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten). |
+| `id` | string | Stable unique id, convention `<developer>-<lang>-<name>[-<quality>][-<quantization>]`. Piper/Mimic3 keep the region (`en_US`) since voice names repeat across regions. Used as the registry key. |
+| `model_type` | enum | `vits` \| `matcha` \| `kokoro` \| `kitten` \| `supertonic` \| `zipvoice` \| `pocket` \| `mms` — the sherpa-onnx `OfflineTtsModelConfig` branch. |
+| `developer` | string | Upstream project (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, …). |
 | `name` | string | Variant name parsed from the release filename. |
 | `language` | array | `{lang_code, language_name, country}` — one per supported language; multilingual models list all. |
-| `quality` | string | Size/variant tag (low / medium / high / int8 / v0_19 / unknown). |
-| `sample_rate` | int | Output audio rate in Hz (16000 / 22050 / 24000). |
-| `num_speakers` | int | Number of preset voices addressable by speaker id. |
+| `quality` | string | Size/variant tag (low / medium / high / x_low / v0_19 / unknown). |
+| `quantization` | enum | `fp32` (default) \| `fp16` \| `int8` — numeric precision of the ONNX build. Most piper voices ship all three; ids get an `-int8`/`-fp16` suffix so each build is addressable. |
+| `sample_rate` | int | Output audio rate in Hz (16000 / 22050 / 24000; one legacy model at 8000). |
+| `num_speakers` | int | Number of preset voices addressable by speaker id. Zero-shot cloning models (zipvoice, pocket) are 1 — they clone any voice from reference audio. |
 | `url` | string | Download URL for the archive (or HF resolve directory for MMS). |
 | `compression` | bool | Whether `url` is a `.tar.bz2` / `.tar.gz` / `.zip`. |
 | `filesize_mb` | number | Approximate download size in MiB. |
@@ -174,6 +185,12 @@ Notable examples:
   the upstream project is being archived (see `deprecation_note`).
 - **Piper** (`piper-*`) — `MIT`.
 - **Coqui** (`coqui-*`) — `CC-BY-4.0` (code is MPL-2.0); verify per model.
+- **PocketTTS** (`kyutai-*`) — `CC-BY-4.0`.
+- **ZipVoice** (`zipvoice-*`) — `unknown`: the [code](https://github.com/k2-fsa/zipvoice)
+  is Apache-2.0, but the released weights carry no license statement and were
+  trained on the CC-BY-NC-4.0 Emilia dataset — treat as non-commercial until
+  verified.
+- **vits-zh-ll** (`csukuangfj-zh-ll`) — `unknown`: no license stated upstream.
 
 ## License
 
