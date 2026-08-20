@@ -12,6 +12,11 @@
       "description": "Stable unique identifier. Convention: '<developer>-<lang(s)>-<name>[-<quality>][-<quantization>]'. Piper/Mimic3 ids keep the region (en_US) since voice names repeat across regions; non-default quantizations get an -int8/-fp16 suffix. Used as the key in models.json and as modelId in consumers.",
       "examples": ["supertonic-3-multilingual", "kokoro-en-v0_19", "piper-en_US-amy-low", "piper-en_US-amy-low-int8"]
     },
+    "engines": {
+      "type": "string",
+      "description": "Which TTS engines can drive this model: floravox (piper/MMS VITS, Matcha, Kokoro graphs — SSML, measured word timings) or sherpa-onnx (everything else).",
+      "enum": ["floravox", "sherpa-onnx"]
+    },
     "model_type": {
       "type": "string",
       "description": "sherpa-onnx OfflineTtsModelConfig branch. Determines which config builder a consumer uses.",

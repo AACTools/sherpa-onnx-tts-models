@@ -415,6 +415,15 @@ def _enrich(entry: dict) -> None:
     # --- min sherpa-onnx version ------------------------------------------
     entry["min_sherpa_onnx_version"] = overrides.resolve_min_version(model_type)
 
+    # --- floravox support ---------------------------------------------------
+    # Which engines can drive this family. floravox (the permissive,
+    # SSML-native engine with measured word timings) drives the
+    # VITS/Matcha/Kokoro graphs; everything else needs sherpa-onnx.
+    # Values: "floravox" | "sherpa-onnx" | "both" (reserved).
+    entry["engines"] = (
+        "floravox" if model_type in ("vits", "mms", "matcha", "kokoro") else "sherpa-onnx"
+    )
+
     # --- source_url: best guess -------------------------------------------
     entry.setdefault(
         "source_url",
