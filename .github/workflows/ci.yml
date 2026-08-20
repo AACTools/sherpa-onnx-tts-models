@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
     paths:
       - "generate.py"
       - "overrides.py"
@@ -10,6 +11,8 @@ on:
       - "schema.json"
       - "validate.py"
       - "scripts/lint_json.py"
+      - "src/**"
+      - "Cargo.toml"
       - "requirements.txt"
       - ".github/workflows/ci.yml"
   pull_request:
