@@ -1,0 +1,17 @@
+[package]
+name = "sherpa-onnx-models"
+description = "The sherpa-onnx TTS model registry (1760+ models) as typed data — canonical source: AACTools/sherpa-onnx-tts-models"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/AACTools/sherpa-onnx-tts-models"
+keywords = ["tts", "speech", "onnx", "sherpa", "models"]
+categories = ["accessibility", "text-processing"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
