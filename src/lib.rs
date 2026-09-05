@@ -105,6 +105,15 @@ pub struct ModelInfo {
     /// `M1`..`F5`).
     #[serde(default)]
     pub voice_names: Option<std::collections::BTreeMap<String, String>>,
+    /// URL to a patched ONNX with a "durations" output for measured
+    /// word timings (floravox engine). Optional; when absent the
+    /// engine falls back to estimated timings from the original url.
+    #[serde(default)]
+    pub durations_url: Option<String>,
+    /// True when the durations_url model has been verified to expose
+    /// a "durations" output tensor for measured word boundaries.
+    #[serde(default)]
+    pub has_durations: bool,
 }
 
 fn default_engines() -> String {
