@@ -718,6 +718,29 @@ def main() -> int:
         for k, v in existing.items():
             models.setdefault(k, v)
 
+    # Always preserve durations_url and has_durations from existing file,
+    # even with --force. These are added by the patch pipeline, not by
+    # generate.py, and must survive regeneration.
+    existing_meta: dict[str, dict] = {}
+    if OUTPUT.exists():
+        try:
+            existing_meta = json.loads(OUTPUT.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    if existing_meta:
+        for k, v in existing_meta.items():
+            if k not in models:
+                continue
+            for field in ("durations_url", "has_durations"):
+                if field in v:
+                    models[k][field] = v[field]
+            # Preserve the "patched" tag
+            if "tags" in v and "patched" in v["tags"]:
+                if "tags" not in models[k]:
+                    models[k]["tags"] = []
+                if "patched" not in models[k]["tags"]:
+                    models[k]["tags"].append("patched")
+
     if not args.no_validate:
         validate_urls(models, args.limit_validate)
 
