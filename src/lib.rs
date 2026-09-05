@@ -110,7 +110,7 @@ pub struct ModelInfo {
     /// engine falls back to estimated timings from the original url.
     #[serde(default)]
     pub durations_url: Option<String>,
-    /// True when the durations_url model has been verified to expose
+    /// True when the `durations_url` model has been verified to expose
     /// a "durations" output tensor for measured word boundaries.
     #[serde(default)]
     pub has_durations: bool,
