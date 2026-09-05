@@ -45929,9 +45929,11 @@
   "tags": [
    "on-device",
    "sherpa-onnx",
-   "vits"
+   "vits",
+   "patched"
   ],
-  "deprecated": false
+  "deprecated": false,
+  "durations_url": "https://huggingface.co/willwade/patched-tts-models/resolve/main/piper-en_GB-southern_english_female_medium/model.onnx"
  },
  "piper-en_GB-southern_english_male-medium": {
   "id": "piper-en_GB-southern_english_male-medium",
@@ -45962,9 +45964,11 @@
   "tags": [
    "on-device",
    "sherpa-onnx",
-   "vits"
+   "vits",
+   "patched"
   ],
-  "deprecated": false
+  "deprecated": false,
+  "durations_url": "https://huggingface.co/willwade/patched-tts-models/resolve/main/piper-en_GB-southern_english_male-medium/model.onnx"
  },
  "piper-en_GB-southern_english_male-medium-fp16": {
   "id": "piper-en_GB-southern_english_male-medium-fp16",
