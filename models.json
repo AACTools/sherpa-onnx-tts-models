@@ -58262,6 +58262,606 @@
     ],
     "deprecated": false
   },
+  "willwade-mms-patched": {
+    "id": "willwade-mms-patched",
+    "model_type": "mms",
+    "developer": "willwade",
+    "name": "mms-tts-multilingual-models-onnx",
+    "language": [
+      {
+        "lang_code": "mul",
+        "language_name": "Multilingual",
+        "country": ""
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 16000,
+    "num_speakers": 1138,
+    "url": "https://huggingface.co/willwade/mms-tts-multilingual-models-onnx",
+    "compression": false,
+    "description": "Meta MMS TTS voices re-exported with the floravox durations-output tap (per-voice dirs: model.onnx/tokens.txt/sample.wav, iso-639-3 keys matching the registry's mms_* ids); the coverage tier (~1,100 languages)",
+    "license": "CC-BY-4.0",
+    "license_url": "https://huggingface.co/willwade/mms-tts-multilingual-models-onnx",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/mms-tts-multilingual-models-onnx",
+    "tags": [
+      "patched",
+      "floravox",
+      "mms",
+      "coverage-tier"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-cy_GB-bu_tts-medium": {
+    "id": "willwade-patched-cy_GB-bu_tts-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "cy_GB-bu_tts-medium",
+    "language": [
+      {
+        "lang_code": "cy",
+        "language_name": "Welsh",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/cy_GB-bu_tts-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_GB-alan-medium": {
+    "id": "willwade-patched-en_GB-alan-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_GB-alan-medium",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_GB-alan-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_GB-alba-medium": {
+    "id": "willwade-patched-en_GB-alba-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_GB-alba-medium",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_GB-alba-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_GB-northern_english_male-medium": {
+    "id": "willwade-patched-en_GB-northern_english_male-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_GB-northern_english_male-medium",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_GB-northern_english_male-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_US-hfc_male-medium": {
+    "id": "willwade-patched-en_US-hfc_male-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_US-hfc_male-medium",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_US-hfc_male-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_US-kristin-medium": {
+    "id": "willwade-patched-en_US-kristin-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_US-kristin-medium",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_US-kristin-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-en_US-ryan-high": {
+    "id": "willwade-patched-en_US-ryan-high",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "en_US-ryan-high",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/en_US-ryan-high.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-patched-fa_IR-amir-medium": {
+    "id": "willwade-patched-fa_IR-amir-medium",
+    "model_type": "vits",
+    "developer": "willwade",
+    "name": "fa_IR-amir-medium",
+    "language": [
+      {
+        "lang_code": "fa",
+        "language_name": "Persian",
+        "country": "IR"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/fa_IR-amir-medium.onnx",
+    "compression": false,
+    "description": "Piper voice re-exported with the floravox durations-output tap (enables measured word timings); pairs with students/* in the same repo",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "sherpa-onnx,floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "patched",
+      "floravox",
+      "teacher"
+    ],
+    "deprecated": false
+  },
+  "willwade-pocket-phoneme-en-24l": {
+    "id": "willwade-pocket-phoneme-en-24l",
+    "model_type": "pocket",
+    "developer": "willwade",
+    "name": "pocket-tts-en-phonemes-24l",
+    "language": [
+      {
+        "lang_code": "en",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 24000,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/pocket-tts-en-phonemes-24l/resolve/main/onnx/flow_lm_main_tapped.onnx",
+    "compression": false,
+    "filesize_mb": 1210,
+    "description": "Kyutai pocket-tts 24L fine-tuned on 380h LibriTTS-R to read IPA phonemes natively: zero-shot voice cloning from any donor wav, attention-measured word boundaries (en-US phoneme inventory; en-GB subset). ONNX bundle in onnx/, safetensors at repo root. Driven by rust-tts-wrapper PocketTtsEngine (pocket-timing feature)",
+    "license": "CC-BY-4.0",
+    "license_url": "https://huggingface.co/willwade/pocket-tts-en-phonemes-24l",
+    "engines": "rust-tts-wrapper",
+    "source_url": "https://huggingface.co/willwade/pocket-tts-en-phonemes-24l",
+    "tags": [
+      "pocket",
+      "phonemes",
+      "voice-cloning",
+      "word-timings",
+      "floravox"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-eng-a96": {
+    "id": "willwade-student-eng-a96",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "eng-a96",
+    "language": [
+      {
+        "lang_code": "en",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "experimental",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/eng-a96-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student (hidden-96 English student)",
+    "license": "MIT",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "research"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-engdict2": {
+    "id": "willwade-student-engdict2",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "engdict2",
+    "language": [
+      {
+        "lang_code": "en",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "experimental",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/engdict2-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student (fleet-best English student (dict pack, b4))",
+    "license": "MIT",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "research"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-enginter": {
+    "id": "willwade-student-enginter",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "enginter",
+    "language": [
+      {
+        "lang_code": "en",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "experimental",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/enginter-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student (interleaved-convention English student)",
+    "license": "MIT",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "research"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-alan": {
+    "id": "willwade-student-fleet-alan",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-alan",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-alan-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'alan': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-alba": {
+    "id": "willwade-student-fleet-alba",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-alba",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-alba-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'alba': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-hfc_male": {
+    "id": "willwade-student-fleet-hfc_male",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-hfc_male",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-hfc_male-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'hfc_male': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-kristin": {
+    "id": "willwade-student-fleet-kristin",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-kristin",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-kristin-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'kristin': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-northern_english_male": {
+    "id": "willwade-student-fleet-northern_english_male",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-northern_english_male",
+    "language": [
+      {
+        "lang_code": "en-GB",
+        "language_name": "English",
+        "country": "GB"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-northern_english_male-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'northern_english_male': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-fleet-ryan": {
+    "id": "willwade-student-fleet-ryan",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "fleet-ryan",
+    "language": [
+      {
+        "lang_code": "en-US",
+        "language_name": "English",
+        "country": "US"
+      }
+    ],
+    "quality": "verified",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/fleet-ryan-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student voice 'ryan': acoustic+decoder+duration ONNX triple distilled from the patched piper teacher; v2 warm-started decoders, ASR-verbatim, ear-approved",
+    "license": "MIT",
+    "license_url": "https://github.com/rhasspy/piper",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "word-timings"
+    ],
+    "deprecated": false
+  },
+  "willwade-student-guj-student": {
+    "id": "willwade-student-guj-student",
+    "model_type": "floravox-student",
+    "developer": "willwade",
+    "name": "guj-student",
+    "language": [
+      {
+        "lang_code": "gu",
+        "language_name": "Gujarati",
+        "country": "IN"
+      }
+    ],
+    "quality": "experimental",
+    "quantization": "fp32",
+    "sample_rate": 22050,
+    "num_speakers": 1,
+    "url": "https://huggingface.co/willwade/piper-voices-patched/resolve/main/students/guj-student-acoustic.onnx",
+    "compression": false,
+    "description": "floravox student (Gujarati MMS-teacher student pilot)",
+    "license": "MIT",
+    "engines": "floravox",
+    "source_url": "https://huggingface.co/willwade/piper-voices-patched",
+    "tags": [
+      "floravox",
+      "student",
+      "research"
+    ],
+    "deprecated": false
+  },
   "zh-zh-abyssinvoker": {
     "id": "zh-zh-abyssinvoker",
     "model_type": "vits",

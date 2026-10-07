@@ -23,29 +23,32 @@
     },
     "engines": {
       "type": "string",
-      "description": "Which TTS engines can drive this model: floravox (piper/MMS VITS, Matcha, Kokoro graphs \u2014 SSML, measured word timings) or sherpa-onnx (everything else).",
+      "description": "Which TTS engines can drive this model: sherpa-onnx (upstream graphs), floravox (student/patched voices, SSML, measured word timings), both, or rust-tts-wrapper (pocket phoneme bundle).",
       "enum": [
         "floravox",
-        "sherpa-onnx"
+        "sherpa-onnx",
+        "sherpa-onnx,floravox",
+        "rust-tts-wrapper"
       ]
     },
     "model_type": {
       "type": "string",
-      "description": "sherpa-onnx OfflineTtsModelConfig branch. Determines which config builder a consumer uses.",
+      "description": "sherpa-onnx OfflineTtsModelConfig branch. Determines which config builder a consumer uses. 'floravox-student' = AACTools student voices (acoustic+decoder+duration ONNX triples).",
       "enum": [
-        "vits",
-        "matcha",
-        "kokoro",
+        "floravox-student",
         "kitten",
-        "supertonic",
-        "zipvoice",
+        "kokoro",
+        "matcha",
+        "mms",
         "pocket",
-        "mms"
+        "supertonic",
+        "vits",
+        "zipvoice"
       ]
     },
     "developer": {
       "type": "string",
-      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, \u2026).",
+      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, …).",
       "examples": [
         "piper",
         "supertone"
@@ -110,11 +113,11 @@
     "num_speakers": {
       "type": "integer",
       "minimum": 1,
-      "description": "Number of preset voices addressable by speaker id. Zero-shot voice-cloning models (zipvoice, pocket) are 1 \u2014 they clone any voice from reference audio rather than exposing presets."
+      "description": "Number of preset voices addressable by speaker id. Zero-shot voice-cloning models (zipvoice, pocket) are 1 — they clone any voice from reference audio rather than exposing presets."
     },
     "voice_names": {
       "type": "object",
-      "description": "Optional mapping of speaker id (as string) to a human-readable voice name. Only present for models with named presets (e.g. Supertonic M1\u2013M5, F1\u2013F5).",
+      "description": "Optional mapping of speaker id (as string) to a human-readable voice name. Only present for models with named presets (e.g. Supertonic M1–M5, F1–F5).",
       "patternProperties": {
         "^\\d+$": {
           "type": "string"
@@ -143,7 +146,7 @@
     },
     "license": {
       "type": "string",
-      "description": "Best-effort license identifier (SPDX-style where possible: MIT, Apache-2.0, CC-BY-NC-4.0, OpenRAIL-M, \u2026). 'unknown' means verify manually \u2014 never assume."
+      "description": "Best-effort license identifier (SPDX-style where possible: MIT, Apache-2.0, CC-BY-NC-4.0, OpenRAIL-M, …). 'unknown' means verify manually — never assume."
     },
     "license_url": {
       "type": "string",
@@ -173,7 +176,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, zero-shot, voice-cloning, \u2026"
+      "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, zero-shot, voice-cloning, …"
     },
     "url_valid": {
       "type": "boolean",

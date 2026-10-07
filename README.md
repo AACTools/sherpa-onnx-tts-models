@@ -17,6 +17,7 @@ for every wrapper to consume.
 | `schema.json` | JSON Schema (draft 2020-12) documenting every field. |
 | `generate.py` | Builds `models.json` from the sherpa-onnx GitHub release + the Meta MMS Hugging Face set. |
 | `overrides.py` | Curated per-developer / per-model metadata (licenses, voice names, deprecation flags). |
+| `ours.py` | Curated AACTools-trained artifacts (patched piper teachers, floravox student fleet, patched MMS set, phoneme pocket-tts) merged into every regeneration. |
 | `validate.py` | Validates `models.json` against the schema + uniqueness + plausibility checks. |
 
 A full refresh is two HTTP fetches (one GitHub release + one Hugging Face JSON)

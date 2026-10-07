@@ -713,6 +713,10 @@ def main() -> int:
     models.update(fetch_github_models())
     models.update(fetch_mms_models())
 
+    # AACTools-trained artifacts (teachers/students/pocket) — curated, ours.
+    import ours
+    models.update(ours.our_models())
+
     # Preserve any manual edits on ids we didn't re-derive this run.
     if existing and not args.force:
         for k, v in existing.items():

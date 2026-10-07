@@ -152,12 +152,28 @@ mod tests {
 
     #[test]
     fn engines_field_is_populated() {
+        let sherpa_types = [
+            "vits", "matcha", "kokoro", "kitten", "supertonic", "zipvoice", "pocket", "mms",
+        ];
         let sherpa = models()
             .values()
-            .filter(|m| m.engines == "sherpa-onnx")
+            .filter(|m| sherpa_types.contains(&m.model_type.as_str()))
+            .filter(|m| m.engines.split(',').any(|e| e.trim() == "sherpa-onnx"))
             .count();
         assert!(sherpa > 1500, "sherpa-drivable: {sherpa}");
-        assert_eq!(sherpa, models().len(), "every model should be sherpa-onnx");
+        // upstream graph types must remain sherpa-onnx-drivable; AACTools
+        // artifacts (developer == "willwade") may be engine-exclusive (the
+        // phoneme pocket bundle needs rust-tts-wrapper's phoneme tokenizer)
+        for m in models().values() {
+            if sherpa_types.contains(&m.model_type.as_str()) && m.developer != "willwade" {
+                assert!(
+                    m.engines.split(',').any(|e| e.trim() == "sherpa-onnx"),
+                    "{} is a sherpa graph type but not sherpa-drivable: {}",
+                    m.id,
+                    m.engines
+                );
+            }
+        }
     }
 
     #[test]
