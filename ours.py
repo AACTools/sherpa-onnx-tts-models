@@ -9,6 +9,9 @@ Sources of truth:
   - teachers/students: https://huggingface.co/willwade/piper-voices-patched
   - patched MMS set:   https://huggingface.co/willwade/mms-tts-multilingual-models-onnx
   - phoneme pocket:    https://huggingface.co/willwade/pocket-tts-en-phonemes-24l
+  - omnivoice GGUFs:   https://huggingface.co/Serveurperso/OmniVoice-GGUF
+    (curated, not ours — the first externally-published engine row;
+    digests via the HF LFS API)
 """
 
 from __future__ import annotations
@@ -165,6 +168,42 @@ def our_models() -> dict[str, dict]:
         "source_url": "https://huggingface.co/willwade/pocket-tts-en-phonemes-24l",
         "tags": ["pocket", "phonemes", "voice-cloning", "word-timings", "floravox"],
         "deprecated": False,
+    }
+
+    # --- omnivoice.cpp (GGML, 646 languages) — the first externally-
+    # published non-sherpa/floravox engine row. Multi-file: the codec
+    # GGUF rides in extra_files (schema 1.3.0) so the checksum gate
+    # covers every fetched byte.
+    out["omnivoice-base-q8_0"] = {
+        "id": "omnivoice-base-q8_0",
+        "model_type": "omnivoice",
+        "developer": "Serveurperso",
+        "name": "OmniVoice base Q8_0",
+        "language": [
+            {"lang_code": "mul", "language_name": "Multilingual (646 languages)", "country": ""}
+        ],
+        "quality": "verified",
+        "quantization": "int8",
+        "sample_rate": 24000,
+        "num_speakers": 1,
+        "url": "https://huggingface.co/Serveurperso/OmniVoice-GGUF/resolve/main/omnivoice-base-Q8_0.gguf",
+        "compression": False,
+        "filesize_mb": 656,
+        "description": "omnivoice.cpp base model (GGUF Q8_0) with its tokenizer codec (F32): offline voice-design TTS across 646 languages; the codec ships as extra_files[0]",
+        "license": "MIT",
+        "license_url": "https://github.com/ServeurpersoCom/omnivoice.cpp",
+        "engines": "omnivoice-local",
+        "source_url": "https://huggingface.co/Serveurperso/OmniVoice-GGUF",
+        "tags": ["omnivoice", "ggml", "gguf", "voice-design", "offline"],
+        "deprecated": False,
+        "sha256": "2882d887921798aea13d45236556bdf8012842ab6f8cd2690943eead6289f298",
+        "extra_files": [
+            {
+                "name": "omnivoice-tokenizer-F32.gguf",
+                "sha256": "83820c6316da023076af7c1d06de5e38dcd09ae9f42203675bf8b3bd9a58e330",
+                "size_mb": 734,
+            }
+        ],
     }
 
     return out
