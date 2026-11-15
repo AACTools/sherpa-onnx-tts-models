@@ -105,6 +105,24 @@ pub struct ModelInfo {
     /// `M1`..`F5`).
     #[serde(default)]
     pub voice_names: Option<std::collections::BTreeMap<String, String>>,
+    /// Companion files fetched alongside the main `url` (multi-file
+    /// models: the GGUF engine pairs). Each carries its own sha256 —
+    /// the checksum gate applies to every fetched byte.
+    #[serde(default)]
+    pub extra_files: Vec<ExtraFile>,
+}
+
+/// One companion file of a multi-file model entry.
+#[derive(Debug, Clone, PartialEq, serde::Deserialize)]
+pub struct ExtraFile {
+    /// File name (also the URL's last segment under the same directory
+    /// as the entry's `url`).
+    pub name: String,
+    /// SHA-256 of the file.
+    pub sha256: String,
+    /// Size in MiB, when known.
+    #[serde(default)]
+    pub size_mb: f64,
 }
 
 fn default_engines() -> String {
@@ -153,7 +171,14 @@ mod tests {
     #[test]
     fn engines_field_is_populated() {
         let sherpa_types = [
-            "vits", "matcha", "kokoro", "kitten", "supertonic", "zipvoice", "pocket", "mms",
+            "vits",
+            "matcha",
+            "kokoro",
+            "kitten",
+            "supertonic",
+            "zipvoice",
+            "pocket",
+            "mms",
         ];
         let sherpa = models()
             .values()

@@ -26,9 +26,10 @@
       "description": "Which TTS engines can drive this model: sherpa-onnx (upstream graphs), floravox (student/patched voices, SSML, measured word timings), both, or rust-tts-wrapper (pocket phoneme bundle).",
       "enum": [
         "floravox",
+        "omnivoice-local",
+        "rust-tts-wrapper",
         "sherpa-onnx",
-        "sherpa-onnx,floravox",
-        "rust-tts-wrapper"
+        "sherpa-onnx,floravox"
       ]
     },
     "model_type": {
@@ -40,6 +41,7 @@
         "kokoro",
         "matcha",
         "mms",
+        "omnivoice",
         "pocket",
         "supertonic",
         "vits",
@@ -181,6 +183,32 @@
     "url_valid": {
       "type": "boolean",
       "description": "Set by --validate. Absent until the URL has been HEAD-checked."
+    },
+    "extra_files": {
+      "type": "array",
+      "description": "Companion files fetched alongside the main url (multi-file models: GGUF engine pairs, sidecar assets). Every file carries its own sha256 — the checksum gate applies to every fetched byte.",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "sha256"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "File name (also the URL's last segment under the same directory as `url`)"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_mb": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
     }
   }
 }
