@@ -709,6 +709,24 @@ def main() -> int:
         except json.JSONDecodeError:
             logger.warning("Existing %s is malformed — starting fresh", OUTPUT.name)
 
+    # sha256 digests SURVIVE --force: they are campaign data (the LFS
+    # API / asset-digest fetch in scripts/fetch_sha256.py), not
+    # anything the upstream fetch re-derives. PR #7's regeneration
+    # wiped 1,226 of them because the preserve-existing pass is
+    # skipped under --force — every MMS voice flipped to
+    # blocked:no-sha256 downstream (caught by the wrapper's
+    # availability audit). Merge them back unconditionally.
+    digests: dict[str, str] = {}
+    if OUTPUT.exists():
+        try:
+            digests = {
+                k: v["sha256"]
+                for k, v in json.loads(OUTPUT.read_text(encoding="utf-8")).items()
+                if isinstance(v, dict) and v.get("sha256")
+            }
+        except json.JSONDecodeError:
+            pass
+
     models: dict[str, dict] = {}
     models.update(fetch_github_models())
     models.update(fetch_mms_models())
@@ -749,6 +767,11 @@ def main() -> int:
 
     if not args.no_validate:
         validate_urls(models, args.limit_validate)
+
+    # merge the campaign digests back (see the note above)
+    for mid, sha in digests.items():
+        if mid in models and not models[mid].get("sha256"):
+            models[mid]["sha256"] = sha
 
     # Sort by id so output is deterministic across runs (the GitHub API and
     # Hugging Face can return assets in different orders). This keeps diffs
