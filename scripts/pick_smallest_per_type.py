@@ -27,10 +27,20 @@ def main() -> int:
     # Group by model_type, keep the smallest by filesize_mb (>0 so we skip
     # MMS resolve dirs which report 0.0).
     best: dict[str, dict] = {}
+    # Types this job cannot verify (skip, with reasons):
+    # - kitten / kokoro: English espeak orphans under sherpa-onnx 2.x
+    #   (0 samples without an external lexicon; rust-tts-wrapper's own
+    #   CI verifies them WITH its generated lexicons)
+    # - omnivoice: no python sherpa_onnx binding (a rust-tts-wrapper
+    #   C++ engine; verified by the wrapper's install tests)
+    UNSPEAKABLE_HERE = {"kitten", "kokoro", "omnivoice"}
+
     for mid, entry in models.items():
         if entry.get("deprecated"):
             continue
         mt = entry["model_type"]
+        if mt in UNSPEAKABLE_HERE:
+            continue
         size = entry.get("filesize_mb", 0.0) or 0.0
         if size <= 0:
             continue
