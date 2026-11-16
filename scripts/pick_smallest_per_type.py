@@ -34,6 +34,15 @@ def main() -> int:
         size = entry.get("filesize_mb", 0.0) or 0.0
         if size <= 0:
             continue
+        # vits: only sherpa-2.x-SPEAKABLE voices verify (the job
+        # synthesises). Piper/coqui/mimic3/melo archives are espeak
+        # orphans under sherpa-onnx 2.x — they LOAD (the layout check)
+        # but synthesise 0 samples without an external lexicon (the
+        # rust-tts-wrapper #66/#92 problem this catalog feeds). Prefer
+        # the Chinese icefall voices (lexicon + dict in the archive);
+        # every non-Chinese vits candidate is an orphan by construction.
+        if mt == "vits" and "icefall-zh" not in mid:
+            continue
         if mt not in best or size < best[mt]["filesize_mb"]:
             best[mt] = {
                 "model_type": mt,
