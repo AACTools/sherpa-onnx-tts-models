@@ -59,6 +59,17 @@ def main() -> int:
     if args.schema_only:
         return _report(errors)
 
+    # 1b. sha256 coverage floor: the campaign digests (MMS via the HF
+    # LFS API, github archives via asset digests) must never silently
+    # regress — a --force regeneration once wiped 1,226 of them (#7)
+    # and every MMS voice flipped to blocked:no-sha256 downstream.
+    with_sha = sum(1 for entry in models.values() if entry.get("sha256"))
+    if with_sha < 1700:
+        errors.append(
+            f"[sha256-floor] only {with_sha} entries carry sha256 (< 1700) — "
+            "run scripts/fetch_sha256.py --write if a regeneration dropped them"
+        )
+
     # 2. Uniqueness — id is the JSON key, but catch dup URLs too.
     seen_urls: dict[str, str] = {}
     for model_id, entry in models.items():
