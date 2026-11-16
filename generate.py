@@ -735,6 +735,21 @@ def main() -> int:
     import ours
     models.update(ours.our_models())
 
+    # espeak-ng-data convention: piper/coqui/mimic3/melo vits archives
+    # ship the espeak-ng phoneme data directory. Sherpa-onnx 2.x dropped
+    # the runtime phonemizer, but the data is the per-voice phonetic
+    # source an external front-end bridges from (#92). Mark it so
+    # consumers know a bridge path exists even without a bundle.
+    for mid, entry in models.items():
+        if (
+            entry.get("model_type") == "vits"
+            and any(
+                tag in mid.lower()
+                for tag in ("piper", "coqui", "mimic3", "melo")
+            )
+        ):
+            entry.setdefault("espeak_data", "espeak-ng-data")
+
     # Preserve any manual edits on ids we didn't re-derive this run.
     if existing and not args.force:
         for k, v in existing.items():

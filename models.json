@@ -64,6 +64,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "fa690d739e2f1e331261a1372d12c726d1f9ac58874bf3cbc4dfd8c95d8c4606"
   },
   "coqui-bn-custom_female": {
@@ -97,6 +98,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "a03292d7da03650e892bb1989b40dc2c62574c0d6c34c8bef185fbb3151417a1"
   },
   "coqui-cs-cv": {
@@ -130,6 +132,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "683c88747309f363f9e832c50585e2ca0d31133690247ef5b05506e20b9c248a"
   },
   "coqui-da-cv": {
@@ -163,6 +166,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "b9ae625e97a530b49015e485b3a96bd03b61a18b9b6d98c15d6bf886d8778027"
   },
   "coqui-de-css10": {
@@ -196,6 +200,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "9ead46b1d4fcc99285e4883dafd4808c1983eb234b35f9b22502d105bf9f6594"
   },
   "coqui-en-ljspeech": {
@@ -229,6 +234,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "c545bc8f7c74b888de053f602d0bb8d9868a204aa352f0ff333553092ba19eac"
   },
   "coqui-en-ljspeech-neon": {
@@ -262,6 +268,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "d93893e40fce6a0732a1fff3c7b3954dd7cf8a4a4378ad004cc79badc7a1ad52"
   },
   "coqui-en-vctk": {
@@ -296,6 +303,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "32da47c0def9cedaa6275df058e3b57d1863ae0a0f3646a5ec8adb7562d59ded"
   },
   "coqui-es-css10": {
@@ -329,6 +337,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "00a725c3611c5510cade535dbb8e5a1bde81b032d085b77972eb80b1d240cd1e"
   },
   "coqui-et-cv": {
@@ -362,6 +371,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "85fdbcfc518c5a0fc8543206f9c241e211212556351942d0aa6728f721b184ce"
   },
   "coqui-fi-css10": {
@@ -395,6 +405,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "77677cff40edbfca4730f45f783ae7b60cd6124357fbfdc40d02f7552da4aac0"
   },
   "coqui-fr-css10": {
@@ -428,6 +439,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "a11143ec2420583466bada28e194494134900761dc4147ac9305857754976699"
   },
   "coqui-ga-cv": {
@@ -461,6 +473,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "947a130bb347d8ffd775514642f8c8948d96411ab6e7aa1a4a41c3147c2b6253"
   },
   "coqui-hr-cv": {
@@ -494,6 +507,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "c6674d678545297484637a0eef3059cd1e16b091d2fb98bbc09331888f41dcab"
   },
   "coqui-lt-cv": {
@@ -527,6 +541,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "51d82dbcdf4bf24cb74c28b62c72ca1108a0663728516f72e915e42c079ba504"
   },
   "coqui-lv-cv": {
@@ -560,6 +575,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ef7cc385a1479df6a0b9d4fe18939bc11fb55d2c843a5f3128237d46184c4157"
   },
   "coqui-mt-cv": {
@@ -593,6 +609,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "c7090a9200828bbb6644ecfda75f3182b819ad667a7f6c8082b2bd72de115b1f"
   },
   "coqui-nl-css10": {
@@ -626,6 +643,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "1390436eb4f540a82f91a6ec9bc468541fc0dd4cfc63b990b50d243d63023a18"
   },
   "coqui-pl-mai_female": {
@@ -659,6 +677,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "e9056e10ee984d2c731f30727921dac9d95f5e0f39a79cb70200eac0a1ae7cef"
   },
   "coqui-pt-cv": {
@@ -692,6 +711,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "f057e8d94e4f84813da498b27b955dbe094fd68c5cbda1b1a2d058231a6f1b48"
   },
   "coqui-ro-cv": {
@@ -725,6 +745,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ce9bfd5f3598593165aaf3bdf929a988fa95bb68152dce61e1aafea4ef749bfc"
   },
   "coqui-sk-cv": {
@@ -758,6 +779,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "b63f39b27032c6a29b996c3eb164c6f5aef8ac5cbf9cad13040ca8cd3e29196c"
   },
   "coqui-sl-cv": {
@@ -791,6 +813,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "d98ec8c352d4e6f9fb12eeaec7ed2af72cc742780784ef132686b6d0ed228085"
   },
   "coqui-sv-cv": {
@@ -824,6 +847,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "475fa75ce46708b5bf2f7fdaaebdfd5501e733ced5f184611243478c0b6edc74"
   },
   "coqui-uk-mai": {
@@ -857,6 +881,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "210845fe8e977382afe449306a2327fcd46b3668f963a264b2ab4be6579e29eb"
   },
   "csukuangfj-zh-ll": {
@@ -1555,6 +1580,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "f87bc5752ea3ec34273a2cc0c5086854c18b6b89dfd0534b5248e86a14cedb5d"
   },
   "melo-zh_en-melo-tts": {
@@ -1594,6 +1620,7 @@
       "vits"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "e58351ed7149f290a54534538badd4077cdbe6fddc964b24d0bee870415d1514"
   },
   "micro-en-v0_8": {
@@ -1661,6 +1688,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "a4d2649d4b5e72e04d981c843e419b41d76845eec297a9c06f73bdd44e79ac1f"
   },
   "mimic3-bn-multi_low": {
@@ -1695,6 +1723,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "a921a622e9dac5e0ad4bfe9f4a02b6d15fe6797532213718305e06312b7a0ae3"
   },
   "mimic3-el_GR-rapunzelina_low": {
@@ -1729,6 +1758,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "4381f051511db09553e1c54e78407758576880f9763b28af8e7e9e4ad0419013"
   },
   "mimic3-es_ES-m-low": {
@@ -1763,6 +1793,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "5d3141aae2b4691053a466e8d77ce9c594471c8ef2bb1b59c0986965243f2ccc"
   },
   "mimic3-fa-haaniye_low": {
@@ -1797,6 +1828,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "2fc02aecf286e999222b7f4736b565ab288c0240aa17df0d7a78e20ad5ed4ec4"
   },
   "mimic3-fi_FI-harri-tapani": {
@@ -1831,6 +1863,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ccafea6cda1e0e5d8f858f5215ddfa1f4ff53f5974ce86ec1bc35ca2b388b1e5"
   },
   "mimic3-gu_IN-cmu-low": {
@@ -1865,6 +1898,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ed6849f311bac71cc9f76b33d32412671ca201ea4b3b575f7b28d67e26eac6ae"
   },
   "mimic3-hu_HU-diana-low": {
@@ -1899,6 +1933,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ca3eb72805a3308258add8deef88d4c302861e1a7f29e2813083cd5378916864"
   },
   "mimic3-ko_KO-kss_low": {
@@ -1933,6 +1968,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "f015d1d15a52ed00d6fe22757c5ef4a74283c53daf829c838fa5c22616ed789c"
   },
   "mimic3-ne_NP-ne-low": {
@@ -1967,6 +2003,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "51dd18a6a71350c352f4d6a1ab43fad5d47b9e4f3464fe15184d893eda515113"
   },
   "mimic3-pl_PL-m-low": {
@@ -2001,6 +2038,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "5043c9308ccfe28b695cfec3c25566880928b2109111d0d01d8e767d0d95d5fb"
   },
   "mimic3-tn_ZA-google-low": {
@@ -2035,6 +2073,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "7f43753eb4d3c4b17ff43c8764d2fb90204ba5e8247ee4023cfe9e0ac40816d3"
   },
   "mimic3-vi_VN-vais1000_low": {
@@ -2069,6 +2108,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "8dcad0d5902bea5bd62994eac0275355ce2cc755232e6d1505bedaace49d2a1f"
   },
   "mini-en-v0_1-fp16": {
@@ -41035,7 +41075,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_dii-high-fp16": {
     "id": "piper-ar_JO-SA_dii-high-fp16",
@@ -41068,7 +41109,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_dii-high-int8": {
     "id": "piper-ar_JO-SA_dii-high-int8",
@@ -41103,7 +41145,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro-high": {
     "id": "piper-ar_JO-SA_miro-high",
@@ -41137,7 +41180,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro-high-fp16": {
     "id": "piper-ar_JO-SA_miro-high-fp16",
@@ -41170,7 +41214,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro-high-int8": {
     "id": "piper-ar_JO-SA_miro-high-int8",
@@ -41205,7 +41250,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro_V2-high": {
     "id": "piper-ar_JO-SA_miro_V2-high",
@@ -41239,7 +41285,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro_V2-high-fp16": {
     "id": "piper-ar_JO-SA_miro_V2-high-fp16",
@@ -41272,7 +41319,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-SA_miro_V2-high-int8": {
     "id": "piper-ar_JO-SA_miro_V2-high-int8",
@@ -41307,7 +41355,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-low": {
     "id": "piper-ar_JO-kareem-low",
@@ -41341,7 +41390,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-low-fp16": {
     "id": "piper-ar_JO-kareem-low-fp16",
@@ -41374,7 +41424,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-low-int8": {
     "id": "piper-ar_JO-kareem-low-int8",
@@ -41409,7 +41460,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-medium": {
     "id": "piper-ar_JO-kareem-medium",
@@ -41443,7 +41495,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-medium-fp16": {
     "id": "piper-ar_JO-kareem-medium-fp16",
@@ -41476,7 +41529,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ar_JO-kareem-medium-int8": {
     "id": "piper-ar_JO-kareem-medium-int8",
@@ -41511,7 +41565,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-low": {
     "id": "piper-ca_ES-upc_ona-low",
@@ -41545,7 +41600,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-low-fp16": {
     "id": "piper-ca_ES-upc_ona-low-fp16",
@@ -41578,7 +41634,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-low-int8": {
     "id": "piper-ca_ES-upc_ona-low-int8",
@@ -41613,7 +41670,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-medium": {
     "id": "piper-ca_ES-upc_ona-medium",
@@ -41647,7 +41705,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-medium-fp16": {
     "id": "piper-ca_ES-upc_ona-medium-fp16",
@@ -41680,7 +41739,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_ona-medium-int8": {
     "id": "piper-ca_ES-upc_ona-medium-int8",
@@ -41715,7 +41775,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_pau-low": {
     "id": "piper-ca_ES-upc_pau-low",
@@ -41749,7 +41810,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_pau-low-fp16": {
     "id": "piper-ca_ES-upc_pau-low-fp16",
@@ -41782,7 +41844,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ca_ES-upc_pau-low-int8": {
     "id": "piper-ca_ES-upc_pau-low-int8",
@@ -41817,7 +41880,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-low": {
     "id": "piper-cs_CZ-jirka-low",
@@ -41851,7 +41915,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-low-fp16": {
     "id": "piper-cs_CZ-jirka-low-fp16",
@@ -41884,7 +41949,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-low-int8": {
     "id": "piper-cs_CZ-jirka-low-int8",
@@ -41919,7 +41985,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-medium": {
     "id": "piper-cs_CZ-jirka-medium",
@@ -41953,7 +42020,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-medium-fp16": {
     "id": "piper-cs_CZ-jirka-medium-fp16",
@@ -41986,7 +42054,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cs_CZ-jirka-medium-int8": {
     "id": "piper-cs_CZ-jirka-medium-int8",
@@ -42021,7 +42090,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-bu_tts-medium": {
     "id": "piper-cy_GB-bu_tts-medium",
@@ -42055,7 +42125,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-bu_tts-medium-fp16": {
     "id": "piper-cy_GB-bu_tts-medium-fp16",
@@ -42088,7 +42159,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-bu_tts-medium-int8": {
     "id": "piper-cy_GB-bu_tts-medium-int8",
@@ -42123,7 +42195,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-gwryw_gogleddol-medium": {
     "id": "piper-cy_GB-gwryw_gogleddol-medium",
@@ -42157,7 +42230,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-gwryw_gogleddol-medium-fp16": {
     "id": "piper-cy_GB-gwryw_gogleddol-medium-fp16",
@@ -42190,7 +42264,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-cy_GB-gwryw_gogleddol-medium-int8": {
     "id": "piper-cy_GB-gwryw_gogleddol-medium-int8",
@@ -42225,7 +42300,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-da_DK-talesyntese-medium": {
     "id": "piper-da_DK-talesyntese-medium",
@@ -42259,7 +42335,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-da_DK-talesyntese-medium-fp16": {
     "id": "piper-da_DK-talesyntese-medium-fp16",
@@ -42292,7 +42369,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-da_DK-talesyntese-medium-int8": {
     "id": "piper-da_DK-talesyntese-medium-int8",
@@ -42327,7 +42405,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-dii-high": {
     "id": "piper-de_DE-dii-high",
@@ -42361,7 +42440,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-dii-high-fp16": {
     "id": "piper-de_DE-dii-high-fp16",
@@ -42394,7 +42474,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-dii-high-int8": {
     "id": "piper-de_DE-dii-high-int8",
@@ -42429,7 +42510,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-eva_k-low": {
     "id": "piper-de_DE-eva_k-low",
@@ -42463,7 +42545,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-eva_k-low-fp16": {
     "id": "piper-de_DE-eva_k-low-fp16",
@@ -42496,7 +42579,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-eva_k-low-int8": {
     "id": "piper-de_DE-eva_k-low-int8",
@@ -42531,7 +42615,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-high": {
     "id": "piper-de_DE-glados-high",
@@ -42565,7 +42650,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-high-fp16": {
     "id": "piper-de_DE-glados-high-fp16",
@@ -42598,7 +42684,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-high-int8": {
     "id": "piper-de_DE-glados-high-int8",
@@ -42633,7 +42720,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-low": {
     "id": "piper-de_DE-glados-low",
@@ -42667,7 +42755,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-low-fp16": {
     "id": "piper-de_DE-glados-low-fp16",
@@ -42700,7 +42789,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-low-int8": {
     "id": "piper-de_DE-glados-low-int8",
@@ -42735,7 +42825,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-medium": {
     "id": "piper-de_DE-glados-medium",
@@ -42769,7 +42860,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-medium-fp16": {
     "id": "piper-de_DE-glados-medium-fp16",
@@ -42802,7 +42894,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados-medium-int8": {
     "id": "piper-de_DE-glados-medium-int8",
@@ -42837,7 +42930,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-high": {
     "id": "piper-de_DE-glados_turret-high",
@@ -42871,7 +42965,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-high-fp16": {
     "id": "piper-de_DE-glados_turret-high-fp16",
@@ -42904,7 +42999,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-high-int8": {
     "id": "piper-de_DE-glados_turret-high-int8",
@@ -42939,7 +43035,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-low": {
     "id": "piper-de_DE-glados_turret-low",
@@ -42973,7 +43070,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-low-fp16": {
     "id": "piper-de_DE-glados_turret-low-fp16",
@@ -43006,7 +43104,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-low-int8": {
     "id": "piper-de_DE-glados_turret-low-int8",
@@ -43041,7 +43140,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-medium": {
     "id": "piper-de_DE-glados_turret-medium",
@@ -43075,7 +43175,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-medium-fp16": {
     "id": "piper-de_DE-glados_turret-medium-fp16",
@@ -43108,7 +43209,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-glados_turret-medium-int8": {
     "id": "piper-de_DE-glados_turret-medium-int8",
@@ -43143,7 +43245,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-karlsson-low": {
     "id": "piper-de_DE-karlsson-low",
@@ -43177,7 +43280,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-karlsson-low-fp16": {
     "id": "piper-de_DE-karlsson-low-fp16",
@@ -43210,7 +43314,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-karlsson-low-int8": {
     "id": "piper-de_DE-karlsson-low-int8",
@@ -43245,7 +43350,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-kerstin-low": {
     "id": "piper-de_DE-kerstin-low",
@@ -43279,7 +43385,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-kerstin-low-fp16": {
     "id": "piper-de_DE-kerstin-low-fp16",
@@ -43312,7 +43419,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-kerstin-low-int8": {
     "id": "piper-de_DE-kerstin-low-int8",
@@ -43347,7 +43455,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-miro-high": {
     "id": "piper-de_DE-miro-high",
@@ -43381,7 +43490,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-miro-high-fp16": {
     "id": "piper-de_DE-miro-high-fp16",
@@ -43414,7 +43524,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-miro-high-int8": {
     "id": "piper-de_DE-miro-high-int8",
@@ -43449,7 +43560,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-pavoque-low": {
     "id": "piper-de_DE-pavoque-low",
@@ -43483,7 +43595,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-pavoque-low-fp16": {
     "id": "piper-de_DE-pavoque-low-fp16",
@@ -43516,7 +43629,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-pavoque-low-int8": {
     "id": "piper-de_DE-pavoque-low-int8",
@@ -43551,7 +43665,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-ramona-low": {
     "id": "piper-de_DE-ramona-low",
@@ -43585,7 +43700,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-ramona-low-fp16": {
     "id": "piper-de_DE-ramona-low-fp16",
@@ -43618,7 +43734,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-ramona-low-int8": {
     "id": "piper-de_DE-ramona-low-int8",
@@ -43653,7 +43770,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-high": {
     "id": "piper-de_DE-thorsten-high",
@@ -43687,7 +43805,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-high-fp16": {
     "id": "piper-de_DE-thorsten-high-fp16",
@@ -43720,7 +43839,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-high-int8": {
     "id": "piper-de_DE-thorsten-high-int8",
@@ -43755,7 +43875,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-low": {
     "id": "piper-de_DE-thorsten-low",
@@ -43789,7 +43910,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-low-fp16": {
     "id": "piper-de_DE-thorsten-low-fp16",
@@ -43822,7 +43944,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-low-int8": {
     "id": "piper-de_DE-thorsten-low-int8",
@@ -43857,7 +43980,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-medium": {
     "id": "piper-de_DE-thorsten-medium",
@@ -43891,7 +44015,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-medium-fp16": {
     "id": "piper-de_DE-thorsten-medium-fp16",
@@ -43924,7 +44049,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten-medium-int8": {
     "id": "piper-de_DE-thorsten-medium-int8",
@@ -43959,7 +44085,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten_emotional-medium": {
     "id": "piper-de_DE-thorsten_emotional-medium",
@@ -43993,7 +44120,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten_emotional-medium-fp16": {
     "id": "piper-de_DE-thorsten_emotional-medium-fp16",
@@ -44026,7 +44154,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-de_DE-thorsten_emotional-medium-int8": {
     "id": "piper-de_DE-thorsten_emotional-medium-int8",
@@ -44061,7 +44190,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-el_GR-rapunzelina-low": {
     "id": "piper-el_GR-rapunzelina-low",
@@ -44095,7 +44225,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-el_GR-rapunzelina-low-fp16": {
     "id": "piper-el_GR-rapunzelina-low-fp16",
@@ -44128,7 +44259,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-el_GR-rapunzelina-low-int8": {
     "id": "piper-el_GR-rapunzelina-low-int8",
@@ -44163,7 +44295,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-low": {
     "id": "piper-en_GB-alan-low",
@@ -44197,7 +44330,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-low-fp16": {
     "id": "piper-en_GB-alan-low-fp16",
@@ -44231,7 +44365,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-low-int8": {
     "id": "piper-en_GB-alan-low-int8",
@@ -44266,7 +44401,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-medium": {
     "id": "piper-en_GB-alan-medium",
@@ -44300,7 +44436,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-medium-fp16": {
     "id": "piper-en_GB-alan-medium-fp16",
@@ -44334,7 +44471,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alan-medium-int8": {
     "id": "piper-en_GB-alan-medium-int8",
@@ -44369,7 +44507,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alba-medium": {
     "id": "piper-en_GB-alba-medium",
@@ -44403,7 +44542,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alba-medium-fp16": {
     "id": "piper-en_GB-alba-medium-fp16",
@@ -44437,7 +44577,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-alba-medium-int8": {
     "id": "piper-en_GB-alba-medium-int8",
@@ -44472,7 +44613,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-aru-medium": {
     "id": "piper-en_GB-aru-medium",
@@ -44506,7 +44648,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-aru-medium-fp16": {
     "id": "piper-en_GB-aru-medium-fp16",
@@ -44540,7 +44683,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-aru-medium-int8": {
     "id": "piper-en_GB-aru-medium-int8",
@@ -44575,7 +44719,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-high": {
     "id": "piper-en_GB-cori-high",
@@ -44609,7 +44754,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-high-fp16": {
     "id": "piper-en_GB-cori-high-fp16",
@@ -44643,7 +44789,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-high-int8": {
     "id": "piper-en_GB-cori-high-int8",
@@ -44678,7 +44825,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-medium": {
     "id": "piper-en_GB-cori-medium",
@@ -44712,7 +44860,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-medium-fp16": {
     "id": "piper-en_GB-cori-medium-fp16",
@@ -44746,7 +44895,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-cori-medium-int8": {
     "id": "piper-en_GB-cori-medium-int8",
@@ -44781,7 +44931,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-dii-high": {
     "id": "piper-en_GB-dii-high",
@@ -44815,7 +44966,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-dii-high-fp16": {
     "id": "piper-en_GB-dii-high-fp16",
@@ -44848,7 +45000,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-dii-high-int8": {
     "id": "piper-en_GB-dii-high-int8",
@@ -44883,7 +45036,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-jenny_dioco-medium": {
     "id": "piper-en_GB-jenny_dioco-medium",
@@ -44917,7 +45071,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-jenny_dioco-medium-fp16": {
     "id": "piper-en_GB-jenny_dioco-medium-fp16",
@@ -44951,7 +45106,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-jenny_dioco-medium-int8": {
     "id": "piper-en_GB-jenny_dioco-medium-int8",
@@ -44986,7 +45142,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-miro-high": {
     "id": "piper-en_GB-miro-high",
@@ -45020,7 +45177,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-miro-high-fp16": {
     "id": "piper-en_GB-miro-high-fp16",
@@ -45053,7 +45211,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-miro-high-int8": {
     "id": "piper-en_GB-miro-high-int8",
@@ -45088,7 +45247,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-northern_english_male-medium": {
     "id": "piper-en_GB-northern_english_male-medium",
@@ -45122,7 +45282,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-northern_english_male-medium-fp16": {
     "id": "piper-en_GB-northern_english_male-medium-fp16",
@@ -45156,7 +45317,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-northern_english_male-medium-int8": {
     "id": "piper-en_GB-northern_english_male-medium-int8",
@@ -45191,7 +45353,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-semaine-medium": {
     "id": "piper-en_GB-semaine-medium",
@@ -45225,7 +45388,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-semaine-medium-fp16": {
     "id": "piper-en_GB-semaine-medium-fp16",
@@ -45259,7 +45423,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-semaine-medium-int8": {
     "id": "piper-en_GB-semaine-medium-int8",
@@ -45294,7 +45459,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-low": {
     "id": "piper-en_GB-southern_english_female-low",
@@ -45328,7 +45494,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-low-fp16": {
     "id": "piper-en_GB-southern_english_female-low-fp16",
@@ -45362,7 +45529,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-low-int8": {
     "id": "piper-en_GB-southern_english_female-low-int8",
@@ -45397,7 +45565,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-medium": {
     "id": "piper-en_GB-southern_english_female-medium",
@@ -45431,7 +45600,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-medium-fp16": {
     "id": "piper-en_GB-southern_english_female-medium-fp16",
@@ -45464,7 +45634,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female-medium-int8": {
     "id": "piper-en_GB-southern_english_female-medium-int8",
@@ -45499,7 +45670,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_female_medium": {
     "id": "piper-en_GB-southern_english_female_medium",
@@ -45533,6 +45705,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "eb566fbfe1cb8995a6c32447bc5163370c34b3fd773ae1c00304144c577acc1a"
   },
   "piper-en_GB-southern_english_male-medium": {
@@ -45567,7 +45740,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_male-medium-fp16": {
     "id": "piper-en_GB-southern_english_male-medium-fp16",
@@ -45600,7 +45774,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-southern_english_male-medium-int8": {
     "id": "piper-en_GB-southern_english_male-medium-int8",
@@ -45635,7 +45810,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-sweetbbak-amy": {
     "id": "piper-en_GB-sweetbbak-amy",
@@ -45669,6 +45845,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "cd56f8f50dad3119785409c1a6dc4f5558fb0833516503d0145eb7009a42e3ef"
   },
   "piper-en_GB-vctk-medium": {
@@ -45704,7 +45881,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-vctk-medium-fp16": {
     "id": "piper-en_GB-vctk-medium-fp16",
@@ -45738,7 +45916,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_GB-vctk-medium-int8": {
     "id": "piper-en_GB-vctk-medium-int8",
@@ -45774,7 +45953,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-low": {
     "id": "piper-en_US-amy-low",
@@ -45808,7 +45988,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-low-fp16": {
     "id": "piper-en_US-amy-low-fp16",
@@ -45841,7 +46022,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-low-int8": {
     "id": "piper-en_US-amy-low-int8",
@@ -45876,7 +46058,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-medium": {
     "id": "piper-en_US-amy-medium",
@@ -45910,7 +46093,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-medium-fp16": {
     "id": "piper-en_US-amy-medium-fp16",
@@ -45943,7 +46127,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-amy-medium-int8": {
     "id": "piper-en_US-amy-medium-int8",
@@ -45978,7 +46163,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-arctic-medium": {
     "id": "piper-en_US-arctic-medium",
@@ -46012,7 +46198,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-arctic-medium-fp16": {
     "id": "piper-en_US-arctic-medium-fp16",
@@ -46045,7 +46232,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-arctic-medium-int8": {
     "id": "piper-en_US-arctic-medium-int8",
@@ -46080,7 +46268,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-bryce-medium": {
     "id": "piper-en_US-bryce-medium",
@@ -46114,7 +46303,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-bryce-medium-fp16": {
     "id": "piper-en_US-bryce-medium-fp16",
@@ -46147,7 +46337,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-bryce-medium-int8": {
     "id": "piper-en_US-bryce-medium-int8",
@@ -46182,7 +46373,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-danny-low": {
     "id": "piper-en_US-danny-low",
@@ -46216,7 +46408,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-danny-low-fp16": {
     "id": "piper-en_US-danny-low-fp16",
@@ -46249,7 +46442,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-danny-low-int8": {
     "id": "piper-en_US-danny-low-int8",
@@ -46284,7 +46478,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-glados": {
     "id": "piper-en_US-glados",
@@ -46318,6 +46513,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "fa2b82a4984468081db8cebbaa7c0b1e008492ac2b4276d7f628d6141b6a2d1c"
   },
   "piper-en_US-glados-high": {
@@ -46352,7 +46548,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-glados-high-fp16": {
     "id": "piper-en_US-glados-high-fp16",
@@ -46385,7 +46582,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-glados-high-int8": {
     "id": "piper-en_US-glados-high-int8",
@@ -46420,7 +46618,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_female-medium": {
     "id": "piper-en_US-hfc_female-medium",
@@ -46454,7 +46653,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_female-medium-fp16": {
     "id": "piper-en_US-hfc_female-medium-fp16",
@@ -46487,7 +46687,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_female-medium-int8": {
     "id": "piper-en_US-hfc_female-medium-int8",
@@ -46522,7 +46723,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_male-medium": {
     "id": "piper-en_US-hfc_male-medium",
@@ -46556,7 +46758,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_male-medium-fp16": {
     "id": "piper-en_US-hfc_male-medium-fp16",
@@ -46589,7 +46792,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-hfc_male-medium-int8": {
     "id": "piper-en_US-hfc_male-medium-int8",
@@ -46624,7 +46828,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-joe-medium": {
     "id": "piper-en_US-joe-medium",
@@ -46658,7 +46863,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-joe-medium-fp16": {
     "id": "piper-en_US-joe-medium-fp16",
@@ -46691,7 +46897,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-joe-medium-int8": {
     "id": "piper-en_US-joe-medium-int8",
@@ -46726,7 +46933,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-john-medium": {
     "id": "piper-en_US-john-medium",
@@ -46760,7 +46968,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-john-medium-fp16": {
     "id": "piper-en_US-john-medium-fp16",
@@ -46793,7 +47002,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-john-medium-int8": {
     "id": "piper-en_US-john-medium-int8",
@@ -46828,7 +47038,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kathleen-low": {
     "id": "piper-en_US-kathleen-low",
@@ -46862,7 +47073,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kathleen-low-fp16": {
     "id": "piper-en_US-kathleen-low-fp16",
@@ -46895,7 +47107,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kathleen-low-int8": {
     "id": "piper-en_US-kathleen-low-int8",
@@ -46930,7 +47143,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kristin-medium": {
     "id": "piper-en_US-kristin-medium",
@@ -46964,7 +47178,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kristin-medium-fp16": {
     "id": "piper-en_US-kristin-medium-fp16",
@@ -46998,7 +47213,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kristin-medium-int8": {
     "id": "piper-en_US-kristin-medium-int8",
@@ -47033,7 +47249,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kusal-medium": {
     "id": "piper-en_US-kusal-medium",
@@ -47067,7 +47284,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kusal-medium-fp16": {
     "id": "piper-en_US-kusal-medium-fp16",
@@ -47101,7 +47319,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-kusal-medium-int8": {
     "id": "piper-en_US-kusal-medium-int8",
@@ -47136,7 +47355,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-l2arctic-medium": {
     "id": "piper-en_US-l2arctic-medium",
@@ -47171,7 +47391,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-l2arctic-medium-fp16": {
     "id": "piper-en_US-l2arctic-medium-fp16",
@@ -47205,7 +47426,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-l2arctic-medium-int8": {
     "id": "piper-en_US-l2arctic-medium-int8",
@@ -47241,7 +47463,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-high": {
     "id": "piper-en_US-lessac-high",
@@ -47275,7 +47498,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-high-fp16": {
     "id": "piper-en_US-lessac-high-fp16",
@@ -47309,7 +47533,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-high-int8": {
     "id": "piper-en_US-lessac-high-int8",
@@ -47344,7 +47569,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-low": {
     "id": "piper-en_US-lessac-low",
@@ -47378,7 +47604,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-low-fp16": {
     "id": "piper-en_US-lessac-low-fp16",
@@ -47411,7 +47638,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-low-int8": {
     "id": "piper-en_US-lessac-low-int8",
@@ -47446,7 +47674,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-medium": {
     "id": "piper-en_US-lessac-medium",
@@ -47480,7 +47709,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-medium-fp16": {
     "id": "piper-en_US-lessac-medium-fp16",
@@ -47513,7 +47743,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-lessac-medium-int8": {
     "id": "piper-en_US-lessac-medium-int8",
@@ -47548,7 +47779,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts-high": {
     "id": "piper-en_US-libritts-high",
@@ -47583,7 +47815,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts-high-fp16": {
     "id": "piper-en_US-libritts-high-fp16",
@@ -47617,7 +47850,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts-high-int8": {
     "id": "piper-en_US-libritts-high-int8",
@@ -47653,7 +47887,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts_r-medium": {
     "id": "piper-en_US-libritts_r-medium",
@@ -47688,7 +47923,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts_r-medium-fp16": {
     "id": "piper-en_US-libritts_r-medium-fp16",
@@ -47722,7 +47958,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-libritts_r-medium-int8": {
     "id": "piper-en_US-libritts_r-medium-int8",
@@ -47758,7 +47995,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-high": {
     "id": "piper-en_US-ljspeech-high",
@@ -47792,7 +48030,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-high-fp16": {
     "id": "piper-en_US-ljspeech-high-fp16",
@@ -47825,7 +48064,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-high-int8": {
     "id": "piper-en_US-ljspeech-high-int8",
@@ -47860,7 +48100,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-medium": {
     "id": "piper-en_US-ljspeech-medium",
@@ -47894,7 +48135,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-medium-fp16": {
     "id": "piper-en_US-ljspeech-medium-fp16",
@@ -47927,7 +48169,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ljspeech-medium-int8": {
     "id": "piper-en_US-ljspeech-medium-int8",
@@ -47962,7 +48205,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-miro-high": {
     "id": "piper-en_US-miro-high",
@@ -47996,7 +48240,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-miro-high-fp16": {
     "id": "piper-en_US-miro-high-fp16",
@@ -48029,7 +48274,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-miro-high-int8": {
     "id": "piper-en_US-miro-high-int8",
@@ -48064,7 +48310,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-norman-medium": {
     "id": "piper-en_US-norman-medium",
@@ -48098,7 +48345,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-norman-medium-fp16": {
     "id": "piper-en_US-norman-medium-fp16",
@@ -48132,7 +48380,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-norman-medium-int8": {
     "id": "piper-en_US-norman-medium-int8",
@@ -48167,7 +48416,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-reza_ibrahim-medium": {
     "id": "piper-en_US-reza_ibrahim-medium",
@@ -48201,7 +48451,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-reza_ibrahim-medium-fp16": {
     "id": "piper-en_US-reza_ibrahim-medium-fp16",
@@ -48234,7 +48485,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-reza_ibrahim-medium-int8": {
     "id": "piper-en_US-reza_ibrahim-medium-int8",
@@ -48269,7 +48521,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-high": {
     "id": "piper-en_US-ryan-high",
@@ -48303,7 +48556,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-high-fp16": {
     "id": "piper-en_US-ryan-high-fp16",
@@ -48337,7 +48591,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-high-int8": {
     "id": "piper-en_US-ryan-high-int8",
@@ -48372,7 +48627,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-low": {
     "id": "piper-en_US-ryan-low",
@@ -48406,7 +48662,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-low-fp16": {
     "id": "piper-en_US-ryan-low-fp16",
@@ -48440,7 +48697,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-low-int8": {
     "id": "piper-en_US-ryan-low-int8",
@@ -48475,7 +48733,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-medium": {
     "id": "piper-en_US-ryan-medium",
@@ -48509,7 +48768,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-medium-fp16": {
     "id": "piper-en_US-ryan-medium-fp16",
@@ -48542,7 +48802,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-ryan-medium-int8": {
     "id": "piper-en_US-ryan-medium-int8",
@@ -48577,7 +48838,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-sam-medium": {
     "id": "piper-en_US-sam-medium",
@@ -48611,7 +48873,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-sam-medium-fp16": {
     "id": "piper-en_US-sam-medium-fp16",
@@ -48644,7 +48907,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-en_US-sam-medium-int8": {
     "id": "piper-en_US-sam-medium-int8",
@@ -48679,7 +48943,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es-glados-medium": {
     "id": "piper-es-glados-medium",
@@ -48713,6 +48978,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "6d65dba9ca1bb59f2241b6f8f3f5f03b8a12544244b7caf405672bdb6c2d4d08"
   },
   "piper-es_AR-daniela-high": {
@@ -48747,7 +49013,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_AR-daniela-high-fp16": {
     "id": "piper-es_AR-daniela-high-fp16",
@@ -48780,7 +49047,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_AR-daniela-high-int8": {
     "id": "piper-es_AR-daniela-high-int8",
@@ -48815,7 +49083,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-carlfm-low": {
     "id": "piper-es_ES-carlfm-low",
@@ -48849,7 +49118,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-carlfm-low-fp16": {
     "id": "piper-es_ES-carlfm-low-fp16",
@@ -48882,7 +49152,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-carlfm-low-int8": {
     "id": "piper-es_ES-carlfm-low-int8",
@@ -48917,7 +49188,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-davefx-medium": {
     "id": "piper-es_ES-davefx-medium",
@@ -48951,7 +49223,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-davefx-medium-fp16": {
     "id": "piper-es_ES-davefx-medium-fp16",
@@ -48984,7 +49257,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-davefx-medium-int8": {
     "id": "piper-es_ES-davefx-medium-int8",
@@ -49019,7 +49293,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-glados-medium": {
     "id": "piper-es_ES-glados-medium",
@@ -49053,7 +49328,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-glados-medium-fp16": {
     "id": "piper-es_ES-glados-medium-fp16",
@@ -49086,7 +49362,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-glados-medium-int8": {
     "id": "piper-es_ES-glados-medium-int8",
@@ -49121,7 +49398,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-miro-high": {
     "id": "piper-es_ES-miro-high",
@@ -49155,7 +49433,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-miro-high-fp16": {
     "id": "piper-es_ES-miro-high-fp16",
@@ -49188,7 +49467,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-miro-high-int8": {
     "id": "piper-es_ES-miro-high-int8",
@@ -49223,7 +49503,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-sharvard-medium": {
     "id": "piper-es_ES-sharvard-medium",
@@ -49257,7 +49538,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-sharvard-medium-fp16": {
     "id": "piper-es_ES-sharvard-medium-fp16",
@@ -49290,7 +49572,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_ES-sharvard-medium-int8": {
     "id": "piper-es_ES-sharvard-medium-int8",
@@ -49325,7 +49608,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-ald-medium": {
     "id": "piper-es_MX-ald-medium",
@@ -49359,7 +49643,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-ald-medium-fp16": {
     "id": "piper-es_MX-ald-medium-fp16",
@@ -49392,7 +49677,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-ald-medium-int8": {
     "id": "piper-es_MX-ald-medium-int8",
@@ -49427,7 +49713,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-claude-high": {
     "id": "piper-es_MX-claude-high",
@@ -49461,7 +49748,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-claude-high-fp16": {
     "id": "piper-es_MX-claude-high-fp16",
@@ -49494,7 +49782,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-es_MX-claude-high-int8": {
     "id": "piper-es_MX-claude-high-int8",
@@ -49529,7 +49818,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-antton-medium": {
     "id": "piper-eu_ES-antton-medium",
@@ -49563,7 +49853,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-antton-medium-fp16": {
     "id": "piper-eu_ES-antton-medium-fp16",
@@ -49596,7 +49887,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-antton-medium-int8": {
     "id": "piper-eu_ES-antton-medium-int8",
@@ -49631,7 +49923,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-maider-medium": {
     "id": "piper-eu_ES-maider-medium",
@@ -49665,7 +49958,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-maider-medium-fp16": {
     "id": "piper-eu_ES-maider-medium-fp16",
@@ -49698,7 +49992,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-eu_ES-maider-medium-int8": {
     "id": "piper-eu_ES-maider-medium-int8",
@@ -49733,7 +50028,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa-haaniye_low": {
     "id": "piper-fa-haaniye_low",
@@ -49767,6 +50063,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "0a329e886eff1d0b4ec0b503a36fd7d8ce218c2ab7e69c068a02ebc039c6eaa1"
   },
   "piper-fa_IR-amir-medium": {
@@ -49801,7 +50098,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-amir-medium-fp16": {
     "id": "piper-fa_IR-amir-medium-fp16",
@@ -49834,7 +50132,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-amir-medium-int8": {
     "id": "piper-fa_IR-amir-medium-int8",
@@ -49869,7 +50168,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji-medium": {
     "id": "piper-fa_IR-ganji-medium",
@@ -49903,7 +50203,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji-medium-fp16": {
     "id": "piper-fa_IR-ganji-medium-fp16",
@@ -49936,7 +50237,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji-medium-int8": {
     "id": "piper-fa_IR-ganji-medium-int8",
@@ -49971,7 +50273,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji_adabi-medium": {
     "id": "piper-fa_IR-ganji_adabi-medium",
@@ -50005,7 +50308,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji_adabi-medium-fp16": {
     "id": "piper-fa_IR-ganji_adabi-medium-fp16",
@@ -50038,7 +50342,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-ganji_adabi-medium-int8": {
     "id": "piper-fa_IR-ganji_adabi-medium-int8",
@@ -50073,7 +50378,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-gyro-medium": {
     "id": "piper-fa_IR-gyro-medium",
@@ -50107,7 +50413,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-gyro-medium-fp16": {
     "id": "piper-fa_IR-gyro-medium-fp16",
@@ -50140,7 +50447,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-gyro-medium-int8": {
     "id": "piper-fa_IR-gyro-medium-int8",
@@ -50175,7 +50483,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-reza_ibrahim-medium": {
     "id": "piper-fa_IR-reza_ibrahim-medium",
@@ -50209,7 +50518,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-reza_ibrahim-medium-fp16": {
     "id": "piper-fa_IR-reza_ibrahim-medium-fp16",
@@ -50242,7 +50552,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_IR-reza_ibrahim-medium-int8": {
     "id": "piper-fa_IR-reza_ibrahim-medium-int8",
@@ -50277,7 +50588,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fa_en-rezahedayatfar-ibrahimwalk": {
     "id": "piper-fa_en-rezahedayatfar-ibrahimwalk",
@@ -50311,6 +50623,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "ed0756ba340e832b2504a5910c0a2ea341a65fa3ec7f26729098df694eecde1d"
   },
   "piper-fi_FI-harri-low": {
@@ -50345,7 +50658,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fi_FI-harri-low-fp16": {
     "id": "piper-fi_FI-harri-low-fp16",
@@ -50378,7 +50692,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fi_FI-harri-low-int8": {
     "id": "piper-fi_FI-harri-low-int8",
@@ -50413,7 +50728,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fi_FI-harri-medium": {
     "id": "piper-fi_FI-harri-medium",
@@ -50447,7 +50763,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fi_FI-harri-medium-fp16": {
     "id": "piper-fi_FI-harri-medium-fp16",
@@ -50480,7 +50797,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fi_FI-harri-medium-int8": {
     "id": "piper-fi_FI-harri-medium-int8",
@@ -50515,7 +50833,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-gilles-low": {
     "id": "piper-fr_FR-gilles-low",
@@ -50549,7 +50868,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-gilles-low-fp16": {
     "id": "piper-fr_FR-gilles-low-fp16",
@@ -50582,7 +50902,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-gilles-low-int8": {
     "id": "piper-fr_FR-gilles-low-int8",
@@ -50617,7 +50938,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-miro-high": {
     "id": "piper-fr_FR-miro-high",
@@ -50651,7 +50973,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-miro-high-fp16": {
     "id": "piper-fr_FR-miro-high-fp16",
@@ -50684,7 +51007,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-miro-high-int8": {
     "id": "piper-fr_FR-miro-high-int8",
@@ -50719,7 +51043,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-low": {
     "id": "piper-fr_FR-siwis-low",
@@ -50753,7 +51078,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-low-fp16": {
     "id": "piper-fr_FR-siwis-low-fp16",
@@ -50786,7 +51112,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-low-int8": {
     "id": "piper-fr_FR-siwis-low-int8",
@@ -50821,7 +51148,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-medium": {
     "id": "piper-fr_FR-siwis-medium",
@@ -50855,7 +51183,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-medium-fp16": {
     "id": "piper-fr_FR-siwis-medium-fp16",
@@ -50888,7 +51217,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-siwis-medium-int8": {
     "id": "piper-fr_FR-siwis-medium-int8",
@@ -50923,7 +51253,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model1": {
     "id": "piper-fr_FR-tjiho-model1",
@@ -50957,7 +51288,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model1-fp16": {
     "id": "piper-fr_FR-tjiho-model1-fp16",
@@ -50990,7 +51322,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model1-int8": {
     "id": "piper-fr_FR-tjiho-model1-int8",
@@ -51025,7 +51358,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model2": {
     "id": "piper-fr_FR-tjiho-model2",
@@ -51059,7 +51393,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model2-fp16": {
     "id": "piper-fr_FR-tjiho-model2-fp16",
@@ -51092,7 +51427,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model2-int8": {
     "id": "piper-fr_FR-tjiho-model2-int8",
@@ -51127,7 +51463,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model3": {
     "id": "piper-fr_FR-tjiho-model3",
@@ -51161,7 +51498,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model3-fp16": {
     "id": "piper-fr_FR-tjiho-model3-fp16",
@@ -51194,7 +51532,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tjiho-model3-int8": {
     "id": "piper-fr_FR-tjiho-model3-int8",
@@ -51229,7 +51568,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tom-medium": {
     "id": "piper-fr_FR-tom-medium",
@@ -51263,7 +51603,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tom-medium-fp16": {
     "id": "piper-fr_FR-tom-medium-fp16",
@@ -51296,7 +51637,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-tom-medium-int8": {
     "id": "piper-fr_FR-tom-medium-int8",
@@ -51331,7 +51673,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-upmc-medium": {
     "id": "piper-fr_FR-upmc-medium",
@@ -51365,7 +51708,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-upmc-medium-fp16": {
     "id": "piper-fr_FR-upmc-medium-fp16",
@@ -51398,7 +51742,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-fr_FR-upmc-medium-int8": {
     "id": "piper-fr_FR-upmc-medium-int8",
@@ -51433,7 +51778,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-pratham-medium": {
     "id": "piper-hi_IN-pratham-medium",
@@ -51467,7 +51813,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-pratham-medium-fp16": {
     "id": "piper-hi_IN-pratham-medium-fp16",
@@ -51500,7 +51847,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-pratham-medium-int8": {
     "id": "piper-hi_IN-pratham-medium-int8",
@@ -51535,7 +51883,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-priyamvada-medium": {
     "id": "piper-hi_IN-priyamvada-medium",
@@ -51569,7 +51918,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-priyamvada-medium-fp16": {
     "id": "piper-hi_IN-priyamvada-medium-fp16",
@@ -51602,7 +51952,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-priyamvada-medium-int8": {
     "id": "piper-hi_IN-priyamvada-medium-int8",
@@ -51637,7 +51988,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-rohan-medium": {
     "id": "piper-hi_IN-rohan-medium",
@@ -51671,7 +52023,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-rohan-medium-fp16": {
     "id": "piper-hi_IN-rohan-medium-fp16",
@@ -51704,7 +52057,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hi_IN-rohan-medium-int8": {
     "id": "piper-hi_IN-rohan-medium-int8",
@@ -51739,7 +52093,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-anna-medium": {
     "id": "piper-hu_HU-anna-medium",
@@ -51773,7 +52128,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-anna-medium-fp16": {
     "id": "piper-hu_HU-anna-medium-fp16",
@@ -51806,7 +52162,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-anna-medium-int8": {
     "id": "piper-hu_HU-anna-medium-int8",
@@ -51841,7 +52198,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-berta-medium": {
     "id": "piper-hu_HU-berta-medium",
@@ -51875,7 +52233,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-berta-medium-fp16": {
     "id": "piper-hu_HU-berta-medium-fp16",
@@ -51908,7 +52267,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-berta-medium-int8": {
     "id": "piper-hu_HU-berta-medium-int8",
@@ -51943,7 +52303,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-imre-medium": {
     "id": "piper-hu_HU-imre-medium",
@@ -51977,7 +52338,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-imre-medium-fp16": {
     "id": "piper-hu_HU-imre-medium-fp16",
@@ -52010,7 +52372,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-hu_HU-imre-medium-int8": {
     "id": "piper-hu_HU-imre-medium-int8",
@@ -52045,7 +52408,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-id_ID-news_tts-medium": {
     "id": "piper-id_ID-news_tts-medium",
@@ -52079,7 +52443,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-id_ID-news_tts-medium-fp16": {
     "id": "piper-id_ID-news_tts-medium-fp16",
@@ -52112,7 +52477,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-id_ID-news_tts-medium-int8": {
     "id": "piper-id_ID-news_tts-medium-int8",
@@ -52147,7 +52513,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-bui-medium": {
     "id": "piper-is_IS-bui-medium",
@@ -52181,7 +52548,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-bui-medium-fp16": {
     "id": "piper-is_IS-bui-medium-fp16",
@@ -52214,7 +52582,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-bui-medium-int8": {
     "id": "piper-is_IS-bui-medium-int8",
@@ -52249,7 +52618,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-salka-medium": {
     "id": "piper-is_IS-salka-medium",
@@ -52283,7 +52653,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-salka-medium-fp16": {
     "id": "piper-is_IS-salka-medium-fp16",
@@ -52316,7 +52687,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-salka-medium-int8": {
     "id": "piper-is_IS-salka-medium-int8",
@@ -52351,7 +52723,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-steinn-medium": {
     "id": "piper-is_IS-steinn-medium",
@@ -52385,7 +52758,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-steinn-medium-fp16": {
     "id": "piper-is_IS-steinn-medium-fp16",
@@ -52418,7 +52792,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-steinn-medium-int8": {
     "id": "piper-is_IS-steinn-medium-int8",
@@ -52453,7 +52828,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-ugla-medium": {
     "id": "piper-is_IS-ugla-medium",
@@ -52487,7 +52863,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-ugla-medium-fp16": {
     "id": "piper-is_IS-ugla-medium-fp16",
@@ -52520,7 +52897,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-is_IS-ugla-medium-int8": {
     "id": "piper-is_IS-ugla-medium-int8",
@@ -52555,7 +52933,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-dii-high": {
     "id": "piper-it_IT-dii-high",
@@ -52589,7 +52968,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-dii-high-fp16": {
     "id": "piper-it_IT-dii-high-fp16",
@@ -52622,7 +53002,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-dii-high-int8": {
     "id": "piper-it_IT-dii-high-int8",
@@ -52657,7 +53038,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-miro-high": {
     "id": "piper-it_IT-miro-high",
@@ -52691,7 +53073,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-miro-high-fp16": {
     "id": "piper-it_IT-miro-high-fp16",
@@ -52724,7 +53107,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-miro-high-int8": {
     "id": "piper-it_IT-miro-high-int8",
@@ -52759,7 +53143,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-paola-medium": {
     "id": "piper-it_IT-paola-medium",
@@ -52793,7 +53178,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-paola-medium-fp16": {
     "id": "piper-it_IT-paola-medium-fp16",
@@ -52826,7 +53212,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-paola-medium-int8": {
     "id": "piper-it_IT-paola-medium-int8",
@@ -52861,7 +53248,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-riccardo-low": {
     "id": "piper-it_IT-riccardo-low",
@@ -52895,7 +53283,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-riccardo-low-fp16": {
     "id": "piper-it_IT-riccardo-low-fp16",
@@ -52928,7 +53317,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-it_IT-riccardo-low-int8": {
     "id": "piper-it_IT-riccardo-low-int8",
@@ -52963,7 +53353,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ka_GE-natia-medium": {
     "id": "piper-ka_GE-natia-medium",
@@ -52997,7 +53388,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ka_GE-natia-medium-fp16": {
     "id": "piper-ka_GE-natia-medium-fp16",
@@ -53031,7 +53423,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ka_GE-natia-medium-int8": {
     "id": "piper-ka_GE-natia-medium-int8",
@@ -53066,7 +53459,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-iseke-low": {
     "id": "piper-kk_KZ-iseke-low",
@@ -53100,7 +53494,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-iseke-low-fp16": {
     "id": "piper-kk_KZ-iseke-low-fp16",
@@ -53133,7 +53528,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-iseke-low-int8": {
     "id": "piper-kk_KZ-iseke-low-int8",
@@ -53168,7 +53564,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-issai-high": {
     "id": "piper-kk_KZ-issai-high",
@@ -53202,7 +53599,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-issai-high-fp16": {
     "id": "piper-kk_KZ-issai-high-fp16",
@@ -53236,7 +53634,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-issai-high-int8": {
     "id": "piper-kk_KZ-issai-high-int8",
@@ -53271,7 +53670,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-raya-low": {
     "id": "piper-kk_KZ-raya-low",
@@ -53305,7 +53705,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-raya-low-fp16": {
     "id": "piper-kk_KZ-raya-low-fp16",
@@ -53339,7 +53740,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-kk_KZ-raya-low-int8": {
     "id": "piper-kk_KZ-raya-low-int8",
@@ -53374,7 +53776,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ku_TR-berfin_renas-medium": {
     "id": "piper-ku_TR-berfin_renas-medium",
@@ -53408,7 +53811,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ku_TR-berfin_renas-medium-fp16": {
     "id": "piper-ku_TR-berfin_renas-medium-fp16",
@@ -53441,7 +53845,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ku_TR-berfin_renas-medium-int8": {
     "id": "piper-ku_TR-berfin_renas-medium-int8",
@@ -53476,7 +53881,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lb_LU-marylux-medium": {
     "id": "piper-lb_LU-marylux-medium",
@@ -53510,7 +53916,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lb_LU-marylux-medium-fp16": {
     "id": "piper-lb_LU-marylux-medium-fp16",
@@ -53543,7 +53950,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lb_LU-marylux-medium-int8": {
     "id": "piper-lb_LU-marylux-medium-int8",
@@ -53578,7 +53986,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lv_LV-aivars-medium": {
     "id": "piper-lv_LV-aivars-medium",
@@ -53612,7 +54021,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lv_LV-aivars-medium-fp16": {
     "id": "piper-lv_LV-aivars-medium-fp16",
@@ -53645,7 +54055,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-lv_LV-aivars-medium-int8": {
     "id": "piper-lv_LV-aivars-medium-int8",
@@ -53680,7 +54091,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-arjun-medium": {
     "id": "piper-ml_IN-arjun-medium",
@@ -53714,7 +54126,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-arjun-medium-fp16": {
     "id": "piper-ml_IN-arjun-medium-fp16",
@@ -53747,7 +54160,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-arjun-medium-int8": {
     "id": "piper-ml_IN-arjun-medium-int8",
@@ -53782,7 +54196,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-meera-medium": {
     "id": "piper-ml_IN-meera-medium",
@@ -53816,7 +54231,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-meera-medium-fp16": {
     "id": "piper-ml_IN-meera-medium-fp16",
@@ -53850,7 +54266,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ml_IN-meera-medium-int8": {
     "id": "piper-ml_IN-meera-medium-int8",
@@ -53885,7 +54302,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-chitwan-medium": {
     "id": "piper-ne_NP-chitwan-medium",
@@ -53919,7 +54337,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-chitwan-medium-fp16": {
     "id": "piper-ne_NP-chitwan-medium-fp16",
@@ -53952,7 +54371,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-chitwan-medium-int8": {
     "id": "piper-ne_NP-chitwan-medium-int8",
@@ -53987,7 +54407,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-low": {
     "id": "piper-ne_NP-google-low",
@@ -54021,7 +54442,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-low-fp16": {
     "id": "piper-ne_NP-google-low-fp16",
@@ -54054,7 +54476,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-low-int8": {
     "id": "piper-ne_NP-google-low-int8",
@@ -54089,7 +54512,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-medium": {
     "id": "piper-ne_NP-google-medium",
@@ -54123,7 +54547,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-medium-fp16": {
     "id": "piper-ne_NP-google-medium-fp16",
@@ -54156,7 +54581,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ne_NP-google-medium-int8": {
     "id": "piper-ne_NP-google-medium-int8",
@@ -54191,7 +54617,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-low": {
     "id": "piper-nl_BE-nathalie-low",
@@ -54225,7 +54652,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-low-fp16": {
     "id": "piper-nl_BE-nathalie-low-fp16",
@@ -54258,7 +54686,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-low-int8": {
     "id": "piper-nl_BE-nathalie-low-int8",
@@ -54293,7 +54722,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-medium": {
     "id": "piper-nl_BE-nathalie-medium",
@@ -54327,7 +54757,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-medium-fp16": {
     "id": "piper-nl_BE-nathalie-medium-fp16",
@@ -54360,7 +54791,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-nathalie-medium-int8": {
     "id": "piper-nl_BE-nathalie-medium-int8",
@@ -54395,7 +54827,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_BE-rdh-low": {
     "id": "piper-nl_BE-rdh-low",
@@ -54429,6 +54862,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "09a2d1425283f4c64cdde3a3a0eb0214d9c93f3eb2a7ee38d39f580d190a1180"
   },
   "piper-nl_BE-rdh-medium": {
@@ -54463,6 +54897,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "3e99e86fcd1ec1bf04bb68fc9e1588e5b88c4a5fa2ee507bd46ca9a947420d84"
   },
   "piper-nl_NL-alex-medium": {
@@ -54497,7 +54932,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-alex-medium-fp16": {
     "id": "piper-nl_NL-alex-medium-fp16",
@@ -54530,7 +54966,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-alex-medium-int8": {
     "id": "piper-nl_NL-alex-medium-int8",
@@ -54565,7 +55002,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-dii-high": {
     "id": "piper-nl_NL-dii-high",
@@ -54599,7 +55037,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-dii-high-fp16": {
     "id": "piper-nl_NL-dii-high-fp16",
@@ -54632,7 +55071,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-dii-high-int8": {
     "id": "piper-nl_NL-dii-high-int8",
@@ -54667,7 +55107,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-miro-high": {
     "id": "piper-nl_NL-miro-high",
@@ -54701,7 +55142,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-miro-high-fp16": {
     "id": "piper-nl_NL-miro-high-fp16",
@@ -54734,7 +55176,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-miro-high-int8": {
     "id": "piper-nl_NL-miro-high-int8",
@@ -54769,7 +55212,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-pim-medium": {
     "id": "piper-nl_NL-pim-medium",
@@ -54803,7 +55247,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-pim-medium-fp16": {
     "id": "piper-nl_NL-pim-medium-fp16",
@@ -54836,7 +55281,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-pim-medium-int8": {
     "id": "piper-nl_NL-pim-medium-int8",
@@ -54871,7 +55317,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-ronnie-medium": {
     "id": "piper-nl_NL-ronnie-medium",
@@ -54905,7 +55352,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-ronnie-medium-fp16": {
     "id": "piper-nl_NL-ronnie-medium-fp16",
@@ -54938,7 +55386,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-nl_NL-ronnie-medium-int8": {
     "id": "piper-nl_NL-ronnie-medium-int8",
@@ -54973,7 +55422,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-no_NO-talesyntese-medium": {
     "id": "piper-no_NO-talesyntese-medium",
@@ -55007,7 +55457,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-no_NO-talesyntese-medium-fp16": {
     "id": "piper-no_NO-talesyntese-medium-fp16",
@@ -55040,7 +55491,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-no_NO-talesyntese-medium-int8": {
     "id": "piper-no_NO-talesyntese-medium-int8",
@@ -55075,7 +55527,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-bass-high": {
     "id": "piper-pl_PL-bass-high",
@@ -55109,7 +55562,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-bass-high-fp16": {
     "id": "piper-pl_PL-bass-high-fp16",
@@ -55142,7 +55596,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-bass-high-int8": {
     "id": "piper-pl_PL-bass-high-int8",
@@ -55177,7 +55632,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-darkman-medium": {
     "id": "piper-pl_PL-darkman-medium",
@@ -55211,7 +55667,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-darkman-medium-fp16": {
     "id": "piper-pl_PL-darkman-medium-fp16",
@@ -55244,7 +55701,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-darkman-medium-int8": {
     "id": "piper-pl_PL-darkman-medium-int8",
@@ -55279,7 +55737,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-gosia-medium": {
     "id": "piper-pl_PL-gosia-medium",
@@ -55313,7 +55772,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-gosia-medium-fp16": {
     "id": "piper-pl_PL-gosia-medium-fp16",
@@ -55346,7 +55806,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-gosia-medium-int8": {
     "id": "piper-pl_PL-gosia-medium-int8",
@@ -55381,7 +55842,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-jarvis_wg_glos-medium": {
     "id": "piper-pl_PL-jarvis_wg_glos-medium",
@@ -55415,7 +55877,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-jarvis_wg_glos-medium-fp16": {
     "id": "piper-pl_PL-jarvis_wg_glos-medium-fp16",
@@ -55448,7 +55911,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-jarvis_wg_glos-medium-int8": {
     "id": "piper-pl_PL-jarvis_wg_glos-medium-int8",
@@ -55483,7 +55947,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-justyna_wg_glos-medium": {
     "id": "piper-pl_PL-justyna_wg_glos-medium",
@@ -55517,7 +55982,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-justyna_wg_glos-medium-fp16": {
     "id": "piper-pl_PL-justyna_wg_glos-medium-fp16",
@@ -55550,7 +56016,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-justyna_wg_glos-medium-int8": {
     "id": "piper-pl_PL-justyna_wg_glos-medium-int8",
@@ -55585,7 +56052,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-mc_speech-medium": {
     "id": "piper-pl_PL-mc_speech-medium",
@@ -55619,7 +56087,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-mc_speech-medium-fp16": {
     "id": "piper-pl_PL-mc_speech-medium-fp16",
@@ -55652,7 +56121,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-mc_speech-medium-int8": {
     "id": "piper-pl_PL-mc_speech-medium-int8",
@@ -55687,7 +56157,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-meski_wg_glos-medium": {
     "id": "piper-pl_PL-meski_wg_glos-medium",
@@ -55721,7 +56192,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-meski_wg_glos-medium-fp16": {
     "id": "piper-pl_PL-meski_wg_glos-medium-fp16",
@@ -55754,7 +56226,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-meski_wg_glos-medium-int8": {
     "id": "piper-pl_PL-meski_wg_glos-medium-int8",
@@ -55789,7 +56262,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-zenski_wg_glos-medium": {
     "id": "piper-pl_PL-zenski_wg_glos-medium",
@@ -55823,7 +56297,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-zenski_wg_glos-medium-fp16": {
     "id": "piper-pl_PL-zenski_wg_glos-medium-fp16",
@@ -55856,7 +56331,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pl_PL-zenski_wg_glos-medium-int8": {
     "id": "piper-pl_PL-zenski_wg_glos-medium-int8",
@@ -55891,7 +56367,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-cadu-medium": {
     "id": "piper-pt_BR-cadu-medium",
@@ -55925,7 +56402,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-cadu-medium-fp16": {
     "id": "piper-pt_BR-cadu-medium-fp16",
@@ -55958,7 +56436,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-cadu-medium-int8": {
     "id": "piper-pt_BR-cadu-medium-int8",
@@ -55993,7 +56472,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-dii-high": {
     "id": "piper-pt_BR-dii-high",
@@ -56027,7 +56507,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-dii-high-fp16": {
     "id": "piper-pt_BR-dii-high-fp16",
@@ -56060,7 +56541,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-dii-high-int8": {
     "id": "piper-pt_BR-dii-high-int8",
@@ -56095,7 +56577,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-edresson-low": {
     "id": "piper-pt_BR-edresson-low",
@@ -56129,7 +56612,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-edresson-low-fp16": {
     "id": "piper-pt_BR-edresson-low-fp16",
@@ -56162,7 +56646,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-edresson-low-int8": {
     "id": "piper-pt_BR-edresson-low-int8",
@@ -56197,7 +56682,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-faber-medium": {
     "id": "piper-pt_BR-faber-medium",
@@ -56231,7 +56717,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-faber-medium-fp16": {
     "id": "piper-pt_BR-faber-medium-fp16",
@@ -56264,7 +56751,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-faber-medium-int8": {
     "id": "piper-pt_BR-faber-medium-int8",
@@ -56299,7 +56787,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-jeff-medium": {
     "id": "piper-pt_BR-jeff-medium",
@@ -56333,7 +56822,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-jeff-medium-fp16": {
     "id": "piper-pt_BR-jeff-medium-fp16",
@@ -56366,7 +56856,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-jeff-medium-int8": {
     "id": "piper-pt_BR-jeff-medium-int8",
@@ -56401,7 +56892,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-miro-high": {
     "id": "piper-pt_BR-miro-high",
@@ -56435,7 +56927,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-miro-high-fp16": {
     "id": "piper-pt_BR-miro-high-fp16",
@@ -56468,7 +56961,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_BR-miro-high-int8": {
     "id": "piper-pt_BR-miro-high-int8",
@@ -56503,7 +56997,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-dii-high": {
     "id": "piper-pt_PT-dii-high",
@@ -56537,7 +57032,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-dii-high-fp16": {
     "id": "piper-pt_PT-dii-high-fp16",
@@ -56570,7 +57066,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-dii-high-int8": {
     "id": "piper-pt_PT-dii-high-int8",
@@ -56605,7 +57102,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-miro-high": {
     "id": "piper-pt_PT-miro-high",
@@ -56639,7 +57137,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-miro-high-fp16": {
     "id": "piper-pt_PT-miro-high-fp16",
@@ -56672,7 +57171,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-miro-high-int8": {
     "id": "piper-pt_PT-miro-high-int8",
@@ -56707,7 +57207,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-tugao-medium": {
     "id": "piper-pt_PT-tugao-medium",
@@ -56741,7 +57242,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-tugao-medium-fp16": {
     "id": "piper-pt_PT-tugao-medium-fp16",
@@ -56774,7 +57276,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-pt_PT-tugao-medium-int8": {
     "id": "piper-pt_PT-tugao-medium-int8",
@@ -56809,7 +57312,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ro_RO-mihai-medium": {
     "id": "piper-ro_RO-mihai-medium",
@@ -56843,7 +57347,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ro_RO-mihai-medium-int8": {
     "id": "piper-ro_RO-mihai-medium-int8",
@@ -56878,7 +57383,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-denis-medium": {
     "id": "piper-ru_RU-denis-medium",
@@ -56912,7 +57418,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-denis-medium-fp16": {
     "id": "piper-ru_RU-denis-medium-fp16",
@@ -56945,7 +57452,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-denis-medium-int8": {
     "id": "piper-ru_RU-denis-medium-int8",
@@ -56980,7 +57488,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-dmitri-medium": {
     "id": "piper-ru_RU-dmitri-medium",
@@ -57014,7 +57523,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-dmitri-medium-fp16": {
     "id": "piper-ru_RU-dmitri-medium-fp16",
@@ -57047,7 +57557,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-dmitri-medium-int8": {
     "id": "piper-ru_RU-dmitri-medium-int8",
@@ -57082,7 +57593,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-irina-medium": {
     "id": "piper-ru_RU-irina-medium",
@@ -57116,7 +57628,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-irina-medium-fp16": {
     "id": "piper-ru_RU-irina-medium-fp16",
@@ -57149,7 +57662,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-irina-medium-int8": {
     "id": "piper-ru_RU-irina-medium-int8",
@@ -57184,7 +57698,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-ruslan-medium": {
     "id": "piper-ru_RU-ruslan-medium",
@@ -57218,7 +57733,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-ruslan-medium-fp16": {
     "id": "piper-ru_RU-ruslan-medium-fp16",
@@ -57251,7 +57767,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ru_RU-ruslan-medium-int8": {
     "id": "piper-ru_RU-ruslan-medium-int8",
@@ -57286,7 +57803,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sk_SK-lili-medium": {
     "id": "piper-sk_SK-lili-medium",
@@ -57320,7 +57838,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sk_SK-lili-medium-fp16": {
     "id": "piper-sk_SK-lili-medium-fp16",
@@ -57353,7 +57872,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sk_SK-lili-medium-int8": {
     "id": "piper-sk_SK-lili-medium-int8",
@@ -57388,7 +57908,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sl_SI-artur-medium": {
     "id": "piper-sl_SI-artur-medium",
@@ -57422,7 +57943,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sl_SI-artur-medium-fp16": {
     "id": "piper-sl_SI-artur-medium-fp16",
@@ -57455,7 +57977,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sl_SI-artur-medium-int8": {
     "id": "piper-sl_SI-artur-medium-int8",
@@ -57490,7 +58013,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sq_AL-edon-medium": {
     "id": "piper-sq_AL-edon-medium",
@@ -57524,7 +58048,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sq_AL-edon-medium-fp16": {
     "id": "piper-sq_AL-edon-medium-fp16",
@@ -57557,7 +58082,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sq_AL-edon-medium-int8": {
     "id": "piper-sq_AL-edon-medium-int8",
@@ -57592,7 +58118,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sr_RS-serbski_institut-medium": {
     "id": "piper-sr_RS-serbski_institut-medium",
@@ -57626,7 +58153,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sr_RS-serbski_institut-medium-fp16": {
     "id": "piper-sr_RS-serbski_institut-medium-fp16",
@@ -57660,7 +58188,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sr_RS-serbski_institut-medium-int8": {
     "id": "piper-sr_RS-serbski_institut-medium-int8",
@@ -57695,7 +58224,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-alma-medium": {
     "id": "piper-sv_SE-alma-medium",
@@ -57729,7 +58259,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-alma-medium-fp16": {
     "id": "piper-sv_SE-alma-medium-fp16",
@@ -57762,7 +58293,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-alma-medium-int8": {
     "id": "piper-sv_SE-alma-medium-int8",
@@ -57797,7 +58329,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-lisa-medium": {
     "id": "piper-sv_SE-lisa-medium",
@@ -57831,7 +58364,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-lisa-medium-fp16": {
     "id": "piper-sv_SE-lisa-medium-fp16",
@@ -57864,7 +58398,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-lisa-medium-int8": {
     "id": "piper-sv_SE-lisa-medium-int8",
@@ -57899,7 +58434,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-nst-medium": {
     "id": "piper-sv_SE-nst-medium",
@@ -57933,7 +58469,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-nst-medium-fp16": {
     "id": "piper-sv_SE-nst-medium-fp16",
@@ -57966,7 +58503,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sv_SE-nst-medium-int8": {
     "id": "piper-sv_SE-nst-medium-int8",
@@ -58001,7 +58539,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sw_CD-lanfrica-medium": {
     "id": "piper-sw_CD-lanfrica-medium",
@@ -58035,7 +58574,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sw_CD-lanfrica-medium-fp16": {
     "id": "piper-sw_CD-lanfrica-medium-fp16",
@@ -58068,7 +58608,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-sw_CD-lanfrica-medium-int8": {
     "id": "piper-sw_CD-lanfrica-medium-int8",
@@ -58103,7 +58644,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-dfki-medium": {
     "id": "piper-tr_TR-dfki-medium",
@@ -58137,7 +58679,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-dfki-medium-fp16": {
     "id": "piper-tr_TR-dfki-medium-fp16",
@@ -58170,7 +58713,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-dfki-medium-int8": {
     "id": "piper-tr_TR-dfki-medium-int8",
@@ -58205,7 +58749,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fahrettin-medium": {
     "id": "piper-tr_TR-fahrettin-medium",
@@ -58239,7 +58784,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fahrettin-medium-fp16": {
     "id": "piper-tr_TR-fahrettin-medium-fp16",
@@ -58272,7 +58818,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fahrettin-medium-int8": {
     "id": "piper-tr_TR-fahrettin-medium-int8",
@@ -58307,7 +58854,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fettah-medium": {
     "id": "piper-tr_TR-fettah-medium",
@@ -58341,7 +58889,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fettah-medium-fp16": {
     "id": "piper-tr_TR-fettah-medium-fp16",
@@ -58375,7 +58924,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-tr_TR-fettah-medium-int8": {
     "id": "piper-tr_TR-fettah-medium-int8",
@@ -58410,7 +58960,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-lada-low": {
     "id": "piper-uk_UA-lada-low",
@@ -58444,7 +58995,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-lada-low-fp16": {
     "id": "piper-uk_UA-lada-low-fp16",
@@ -58477,7 +59029,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-lada-low-int8": {
     "id": "piper-uk_UA-lada-low-int8",
@@ -58512,7 +59065,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-ukrainian_tts-medium": {
     "id": "piper-uk_UA-ukrainian_tts-medium",
@@ -58546,7 +59100,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-ukrainian_tts-medium-fp16": {
     "id": "piper-uk_UA-ukrainian_tts-medium-fp16",
@@ -58579,7 +59134,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-uk_UA-ukrainian_tts-medium-int8": {
     "id": "piper-uk_UA-ukrainian_tts-medium-int8",
@@ -58614,7 +59170,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ur_PK-fasih-medium": {
     "id": "piper-ur_PK-fasih-medium",
@@ -58648,7 +59205,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ur_PK-fasih-medium-fp16": {
     "id": "piper-ur_PK-fasih-medium-fp16",
@@ -58681,7 +59239,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-ur_PK-fasih-medium-int8": {
     "id": "piper-ur_PK-fasih-medium-int8",
@@ -58716,7 +59275,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-25hours_single-low": {
     "id": "piper-vi_VN-25hours_single-low",
@@ -58750,7 +59310,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-25hours_single-low-fp16": {
     "id": "piper-vi_VN-25hours_single-low-fp16",
@@ -58784,7 +59345,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-25hours_single-low-int8": {
     "id": "piper-vi_VN-25hours_single-low-int8",
@@ -58819,7 +59381,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vais1000-medium": {
     "id": "piper-vi_VN-vais1000-medium",
@@ -58853,7 +59416,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vais1000-medium-fp16": {
     "id": "piper-vi_VN-vais1000-medium-fp16",
@@ -58886,7 +59450,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vais1000-medium-int8": {
     "id": "piper-vi_VN-vais1000-medium-int8",
@@ -58921,7 +59486,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vivos-low": {
     "id": "piper-vi_VN-vivos-low",
@@ -58955,7 +59521,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vivos-low-fp16": {
     "id": "piper-vi_VN-vivos-low-fp16",
@@ -58988,7 +59555,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-vi_VN-vivos-low-int8": {
     "id": "piper-vi_VN-vivos-low-int8",
@@ -59023,7 +59591,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-chaowen-medium": {
     "id": "piper-zh_CN-chaowen-medium",
@@ -59057,7 +59626,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-chaowen-medium-fp16": {
     "id": "piper-zh_CN-chaowen-medium-fp16",
@@ -59090,7 +59660,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-chaowen-medium-int8": {
     "id": "piper-zh_CN-chaowen-medium-int8",
@@ -59125,7 +59696,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-huayan-medium": {
     "id": "piper-zh_CN-huayan-medium",
@@ -59159,6 +59731,7 @@
       "patched"
     ],
     "deprecated": false,
+    "espeak_data": "espeak-ng-data",
     "sha256": "dbdfec42b91d9cee31cce9ff4b3e9c305eb6fbf60546d071f7e46273554cce6b"
   },
   "piper-zh_CN-xiao_ya-medium": {
@@ -59193,7 +59766,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-xiao_ya-medium-fp16": {
     "id": "piper-zh_CN-xiao_ya-medium-fp16",
@@ -59226,7 +59800,8 @@
       "sherpa-onnx",
       "vits"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "piper-zh_CN-xiao_ya-medium-int8": {
     "id": "piper-zh_CN-xiao_ya-medium-int8",
@@ -59261,7 +59836,8 @@
       "vits",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "espeak_data": "espeak-ng-data"
   },
   "supertonic-3-multilingual": {
     "id": "supertonic-3-multilingual",
