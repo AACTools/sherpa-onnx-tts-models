@@ -779,6 +779,28 @@ def main() -> int:
                     models[k]["tags"] = []
                 if "patched" not in models[k]["tags"]:
                     models[k]["tags"].append("patched")
+            # Preserve aliases (recorded renames)
+            if "aliases" in v:
+                models[k].setdefault("aliases", [])
+                for alias in v["aliases"]:
+                    if alias not in models[k]["aliases"]:
+                        models[k]["aliases"].append(alias)
+
+        # Sync-time rename detection: ids that vanished from the registry
+        # but whose URL matches a surviving entry = a rename
+        old_urls = {}
+        for old_id, old_entry in existing_meta.items():
+            if old_id not in models and "url" in old_entry:
+                old_urls[old_entry["url"]] = old_id
+        if old_urls:
+            new_urls = {e.get("url"): k for k, e in models.items()}
+            for url, old_id in old_urls.items():
+                new_id = new_urls.get(url)
+                if new_id and new_id != old_id:
+                    models[new_id].setdefault("aliases", [])
+                    if old_id not in models[new_id]["aliases"]:
+                        models[new_id]["aliases"].append(old_id)
+                    print(f"  rename detected: {old_id} -> {new_id} (recorded as alias)")
 
     if not args.no_validate:
         validate_urls(models, args.limit_validate)

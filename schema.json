@@ -213,6 +213,18 @@
     "espeak_data": {
       "type": "string",
       "description": "Relative path to espeak-ng phoneme data shipped INSIDE the voice archive (piper voices carry 'espeak-ng-data/'). Sherpa-onnx 2.x dropped the runtime espeak phonemizer; the data is the per-voice phonetic source an external front-end (rust-tts-wrapper, floravox) can bridge from. Omitted when the archive carries none."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Previous registry ids this entry was known as. Consumers should map installed directories named by an alias to this entry (and suggest the rename). Sync-time detection records these automatically when an id changes but the URL stays the same.",
+      "examples": [
+        [
+          "piper-nl-rdh-low"
+        ]
+      ]
     }
   }
 }

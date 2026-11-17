@@ -13,7 +13,7 @@ for every wrapper to consume.
 
 | File | Purpose |
 |------|---------|
-| `models.json` | The registry — one entry per model, keyed by stable id. |
+| `models.json` | The registry — one entry per model, keyed by stable id. Ids are *mostly* stable; renames carry an `aliases` array listing previous ids. Consumers should map installed directories named by an alias to the current entry. |
 | `schema.json` | JSON Schema (draft 2020-12) documenting every field. |
 | `generate.py` | Builds `models.json` from the sherpa-onnx GitHub release + the Meta MMS Hugging Face set. |
 | `overrides.py` | Curated per-developer / per-model metadata (licenses, voice names, deprecation flags). |
