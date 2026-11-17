@@ -46102,10 +46102,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "eb566fbfe1cb8995a6c32447bc5163370c34b3fd773ae1c00304144c577acc1a",
     "aliases": [
       "piper-en-southern_english_female_medium"
-    ]
+    ],
+    "sha256": "eb566fbfe1cb8995a6c32447bc5163370c34b3fd773ae1c00304144c577acc1a"
   },
   "piper-en_GB-southern_english_male-medium": {
     "id": "piper-en_GB-southern_english_male-medium",
@@ -46254,10 +46254,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "cd56f8f50dad3119785409c1a6dc4f5558fb0833516503d0145eb7009a42e3ef",
     "aliases": [
       "piper-en-sweetbbak-amy"
-    ]
+    ],
+    "sha256": "cd56f8f50dad3119785409c1a6dc4f5558fb0833516503d0145eb7009a42e3ef"
   },
   "piper-en_GB-vctk-medium": {
     "id": "piper-en_GB-vctk-medium",
@@ -46979,10 +46979,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "fa2b82a4984468081db8cebbaa7c0b1e008492ac2b4276d7f628d6141b6a2d1c",
     "aliases": [
       "piper-en-glados"
-    ]
+    ],
+    "sha256": "fa2b82a4984468081db8cebbaa7c0b1e008492ac2b4276d7f628d6141b6a2d1c"
   },
   "piper-en_US-glados-high": {
     "id": "piper-en_US-glados-high",
@@ -56030,10 +56030,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "09a2d1425283f4c64cdde3a3a0eb0214d9c93f3eb2a7ee38d39f580d190a1180",
     "aliases": [
       "piper-nl-rdh-low"
-    ]
+    ],
+    "sha256": "09a2d1425283f4c64cdde3a3a0eb0214d9c93f3eb2a7ee38d39f580d190a1180"
   },
   "piper-nl_BE-rdh-medium": {
     "id": "piper-nl_BE-rdh-medium",
@@ -56068,10 +56068,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "3e99e86fcd1ec1bf04bb68fc9e1588e5b88c4a5fa2ee507bd46ca9a947420d84",
     "aliases": [
       "piper-nl-rdh-medium"
-    ]
+    ],
+    "sha256": "3e99e86fcd1ec1bf04bb68fc9e1588e5b88c4a5fa2ee507bd46ca9a947420d84"
   },
   "piper-nl_NL-alex-medium": {
     "id": "piper-nl_NL-alex-medium",
@@ -61316,10 +61316,10 @@
     ],
     "deprecated": false,
     "espeak_data": "espeak-ng-data",
-    "sha256": "dbdfec42b91d9cee31cce9ff4b3e9c305eb6fbf60546d071f7e46273554cce6b",
     "aliases": [
       "piper-zh-huayan-medium"
-    ]
+    ],
+    "sha256": "dbdfec42b91d9cee31cce9ff4b3e9c305eb6fbf60546d071f7e46273554cce6b"
   },
   "piper-zh_CN-xiao_ya-medium": {
     "id": "piper-zh_CN-xiao_ya-medium",
