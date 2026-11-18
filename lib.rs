@@ -123,6 +123,11 @@ pub struct ExtraFile {
     /// Size in MiB, when known.
     #[serde(default)]
     pub size_mb: f64,
+    /// Absolute URL when the companion lives OUTSIDE the entry url's
+    /// directory (e.g. matcha's shared vocoders in the separate
+    /// `vocoder-models` release). Absent = same-directory convention.
+    #[serde(default)]
+    pub url: Option<String>,
 }
 
 fn default_engines() -> String {

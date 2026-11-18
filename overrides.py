@@ -253,6 +253,43 @@ MODEL_OVERRIDES: dict[str, dict] = {
     "kokoro-zh_en-multi-lang": {
         "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
     },
+    # Matcha acoustic models ship no vocoder — the shared vocoder lives
+    # in k2-fsa's separate `vocoder-models` release. Pairings verified
+    # end-to-end (rust-tts-wrapper #119): en-ljspeech and zh-baker are
+    # 22.05 kHz (hifigan_v2), zh-en is 16 kHz (vocos-16khz-univ —
+    # hifigan is rejected on sample-rate mismatch). fa_en models left
+    # unpaired pending verification (they never worked on fresh
+    # machines; not a regression).
+    "icefall-en-ljspeech": {
+        "extra_files": [
+            {
+                "name": "hifigan_v2.onnx",
+                "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+                "size_mb": 3.57,
+                "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx",
+            }
+        ],
+    },
+    "icefall-zh-baker": {
+        "extra_files": [
+            {
+                "name": "hifigan_v2.onnx",
+                "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+                "size_mb": 3.57,
+                "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx",
+            }
+        ],
+    },
+    "icefall-zh_en-zh-en": {
+        "extra_files": [
+            {
+                "name": "vocos-16khz-univ.onnx",
+                "sha256": "b599142a1fb8ff03de3e84ac35ff537c619e56f4267a6fe894851a42844acf9e",
+                "size_mb": 14.5,
+                "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-16khz-univ.onnx",
+            }
+        ],
+    },
     "kokoro-en-v0_19": {
         "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
         "voice_names": KOKORO_EN_V0_19_VOICES,
