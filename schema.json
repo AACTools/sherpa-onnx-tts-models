@@ -50,7 +50,7 @@
     },
     "developer": {
       "type": "string",
-      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, …).",
+      "description": "Upstream project / publisher (piper, coqui, icefall, mms, kokoro, supertone, mimic3, melo, kitten, kyutai, zipvoice, \u2026).",
       "examples": [
         "piper",
         "supertone"
@@ -115,11 +115,11 @@
     "num_speakers": {
       "type": "integer",
       "minimum": 1,
-      "description": "Number of preset voices addressable by speaker id. Zero-shot voice-cloning models (zipvoice, pocket) are 1 — they clone any voice from reference audio rather than exposing presets."
+      "description": "Number of preset voices addressable by speaker id. Zero-shot voice-cloning models (zipvoice, pocket) are 1 \u2014 they clone any voice from reference audio rather than exposing presets."
     },
     "voice_names": {
       "type": "object",
-      "description": "Optional mapping of speaker id (as string) to a human-readable voice name. Only present for models with named presets (e.g. Supertonic M1–M5, F1–F5).",
+      "description": "Optional mapping of speaker id (as string) to a human-readable voice name. Only present for models with named presets (e.g. Supertonic M1\u2013M5, F1\u2013F5).",
       "patternProperties": {
         "^\\d+$": {
           "type": "string"
@@ -148,7 +148,7 @@
     },
     "license": {
       "type": "string",
-      "description": "Best-effort license identifier (SPDX-style where possible: MIT, Apache-2.0, CC-BY-NC-4.0, OpenRAIL-M, …). 'unknown' means verify manually — never assume."
+      "description": "Best-effort license identifier (SPDX-style where possible: MIT, Apache-2.0, CC-BY-NC-4.0, OpenRAIL-M, \u2026). 'unknown' means verify manually \u2014 never assume."
     },
     "license_url": {
       "type": "string",
@@ -178,7 +178,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, zero-shot, voice-cloning, …"
+      "description": "Search facets: model_type, on-device, multilingual, multi-speaker, int8, zero-shot, voice-cloning, \u2026"
     },
     "url_valid": {
       "type": "boolean",
@@ -186,7 +186,7 @@
     },
     "extra_files": {
       "type": "array",
-      "description": "Companion files fetched alongside the main url (multi-file models: GGUF engine pairs, sidecar assets). Every file carries its own sha256 — the checksum gate applies to every fetched byte.",
+      "description": "Companion files fetched alongside the main url (multi-file models: GGUF engine pairs, sidecar assets). Every file carries its own sha256 \u2014 the checksum gate applies to every fetched byte.",
       "items": {
         "type": "object",
         "required": [
@@ -205,6 +205,10 @@
           "size_mb": {
             "type": "number",
             "minimum": 0
+          },
+          "url": {
+            "type": "string",
+            "description": "Absolute URL when the companion file lives outside the entry url's directory (e.g. shared vocoders from the vocoder-models release). Absent = resolved from the entry url's directory + name."
           }
         },
         "additionalProperties": false

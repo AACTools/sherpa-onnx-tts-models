@@ -951,7 +951,15 @@
       "sherpa-onnx",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "extra_files": [
+      {
+        "name": "hifigan_v2.onnx",
+        "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+        "size_mb": 3.57,
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx"
+      }
+    ]
   },
   "icefall-en-ljspeech-low": {
     "id": "icefall-en-ljspeech-low",
@@ -1088,7 +1096,15 @@
       "sherpa-onnx",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "extra_files": [
+      {
+        "name": "hifigan_v2.onnx",
+        "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+        "size_mb": 3.57,
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx"
+      }
+    ]
   },
   "icefall-zh_en-zh-en": {
     "id": "icefall-zh_en-zh-en",
@@ -1128,7 +1144,15 @@
       "sherpa-onnx",
       "patched"
     ],
-    "deprecated": false
+    "deprecated": false,
+    "extra_files": [
+      {
+        "name": "vocos-16khz-univ.onnx",
+        "sha256": "b599142a1fb8ff03de3e84ac35ff537c619e56f4267a6fe894851a42844acf9e",
+        "size_mb": 14.5,
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-16khz-univ.onnx"
+      }
+    ]
   },
   "inflect-en-micro-v2": {
     "id": "inflect-en-micro-v2",
