@@ -1,7 +1,7 @@
 [package]
 name = "sherpa-onnx-models"
 description = "The sherpa-onnx TTS model registry (1780 models incl. 20 AACTools-trained artifacts) as typed data — canonical source: AACTools/sherpa-onnx-tts-models"
-version = "1.5.0"
+version = "1.5.1"
 edition = "2021"
 license = "Apache-2.0"
 repository = "https://github.com/AACTools/sherpa-onnx-tts-models"
