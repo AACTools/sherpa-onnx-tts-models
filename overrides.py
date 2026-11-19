@@ -285,8 +285,37 @@ MODEL_OVERRIDES: dict[str, dict] = {
             {
                 "name": "vocos-16khz-univ.onnx",
                 "sha256": "b599142a1fb8ff03de3e84ac35ff537c619e56f4267a6fe894851a42844acf9e",
-                "size_mb": 14.5,
+                "size_mb": 51.4,
                 "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-16khz-univ.onnx",
+            }
+        ],
+    },
+    # fa_en matcha: verified 22.05 kHz (the registry's sample_rate:
+    # 16000 was WRONG — sherpa's own validation rejects vocos-16khz
+    # on sample-rate mismatch, hifigan_v2 accepted). The pairing
+    # fixes engine creation; tokenization remains blocked on phonetic
+    # data — these archives ship no lexicon and sherpa-onnx 2.x
+    # removed the espeak front-end (data_dir ignored, verified
+    # empirically). rust-tts-wrapper #122 re-probe follow-up.
+    "matcha-fa_en-khadijah": {
+        "sample_rate": 22050,
+        "extra_files": [
+            {
+                "name": "hifigan_v2.onnx",
+                "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+                "size_mb": 3.57,
+                "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx",
+            }
+        ],
+    },
+    "matcha-fa_en-musa": {
+        "sample_rate": 22050,
+        "extra_files": [
+            {
+                "name": "hifigan_v2.onnx",
+                "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+                "size_mb": 3.57,
+                "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx",
             }
         ],
     },
