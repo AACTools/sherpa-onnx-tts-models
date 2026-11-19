@@ -1149,7 +1149,7 @@
       {
         "name": "vocos-16khz-univ.onnx",
         "sha256": "b599142a1fb8ff03de3e84ac35ff537c619e56f4267a6fe894851a42844acf9e",
-        "size_mb": 14.5,
+        "size_mb": 51.4,
         "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/vocos-16khz-univ.onnx"
       }
     ]
@@ -1511,7 +1511,7 @@
     ],
     "quality": "unknown",
     "quantization": "fp32",
-    "sample_rate": 16000,
+    "sample_rate": 22050,
     "num_speakers": 1,
     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-tts-fa_en-khadijah.tar.bz2",
     "compression": true,
@@ -1530,6 +1530,14 @@
       "patched"
     ],
     "deprecated": false,
+    "extra_files": [
+      {
+        "name": "hifigan_v2.onnx",
+        "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+        "size_mb": 3.57,
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx"
+      }
+    ],
     "sha256": "c2320be44132687d8bd1e0935e64a301f7f4066d27785f4c6432338c6392c874"
   },
   "matcha-fa_en-musa": {
@@ -1551,7 +1559,7 @@
     ],
     "quality": "unknown",
     "quantization": "fp32",
-    "sample_rate": 16000,
+    "sample_rate": 22050,
     "num_speakers": 1,
     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/matcha-tts-fa_en-musa.tar.bz2",
     "compression": true,
@@ -1570,6 +1578,14 @@
       "patched"
     ],
     "deprecated": false,
+    "extra_files": [
+      {
+        "name": "hifigan_v2.onnx",
+        "sha256": "a41d404cce7924493540238da5b30a4bc14b6ddaf1a37f3c79fa4f59548c19f0",
+        "size_mb": 3.57,
+        "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/vocoder-models/hifigan_v2.onnx"
+      }
+    ],
     "sha256": "c82fec834b076dd9a813801d02e740dcb80f393b7c5f958ada8858beead7b394"
   },
   "melo-en-melo-tts": {
